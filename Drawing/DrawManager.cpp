@@ -37,7 +37,8 @@ void DrawManager2PointsCursor::updateDrawing(Detection *detection)
     else
         drawer.resetPrev();
     Mat img = drawer.getImg().clone();
-    drawCursor(cursor,detection->isCursorActive(),img);
+    if(detection->isDetected())
+        drawCursor(cursor,detection->isCursorActive(),img);
     displayImage(img);
 }
 

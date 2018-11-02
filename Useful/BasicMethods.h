@@ -18,10 +18,14 @@ Mat filtreMoyenNVG(Mat src, int voisinage);
 
 Mat saturateImg(Mat src, int sat);
 
-bool inRange(Vec3b pixel,Vec3b color,Vec3b range);
+bool inRange(Vec3b pixel,const Vec3b & lower,const Vec3b &upper);
 
-Mat* getColorSegmentedImage(Mat org,Vec3b color,Vec3b range);
+Mat* getColorSegmentedImage(Mat org,const Vec3b &lower,const Vec3b &upper);
 
 Vec3b* getColor(Mat org,Point pnt,int size);
 
 void flipFrame(Mat img);
+
+int dis(Point p1, Point p2);
+
+int magn(Point p);

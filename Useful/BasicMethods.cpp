@@ -78,15 +78,15 @@ Mat filtreMoyenNVG(Mat src, int voisinage){
     return dst;
 }
 
-bool inRange(Vec3b pixel,Vec3b color,Vec3b range)
+bool inRange(Vec3b pixel,const Vec3b &lower, const Vec3b &upper)
 {
     for (int i = 0; i < 3; ++i)
-        if(pixel[i] > color[i]+range[i] || pixel[i] < color[i]-range[i])
+        if(pixel[i] > upper[i] || pixel[i] < lower[i])
             return false;
     return true;
 }
 
-Mat* getColorSegmentedImage(Mat org,Vec3b color,Vec3b range)
+Mat* getColorSegmentedImage(Mat org,const Vec3b& lower, const Vec3b &upper)
 {
     Mat* mat = new Mat(org.rows,org.cols,CV_8UC1);
 //    cout << color << " " << range << endl;
@@ -95,7 +95,7 @@ Mat* getColorSegmentedImage(Mat org,Vec3b color,Vec3b range)
         for (int j = 0; j < org.cols; ++j)
         {
 
-            mat->at<uchar>(i,j) = inRange(org.at<Vec3b>(i,j),color,range)?
+            mat->at<uchar>(i,j) = inRange(org.at<Vec3b>(i,j),lower,upper)?
                                   255:0;
         }
     }
@@ -162,4 +162,15 @@ Mat saturateImg(Mat src, int sat)
 // HSV back to BGR
     cvtColor(img,img,cv::COLOR_HSV2BGR);
     return img;
+}
+
+int dis(Point p1, Point p2)
+{
+
+    return magn(p1-p2);
+}
+
+int magn(Point p)
+{
+    return (int)sqrt(p.x*p.x+p.y*p.y);
 }
