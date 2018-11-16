@@ -7,6 +7,30 @@
 #include "DetectionPolicy.h"
 #include "Useful/BasicMethods.h"
 
+Mat equalizeIntensity(const Mat& inputImage)
+{
+    if(inputImage.channels() >= 3)
+    {
+        Mat ycrcb;
+
+        cvtColor(inputImage,ycrcb,cv::COLOR_BGR2HSV);
+
+        vector<Mat> channels;
+        split(ycrcb,channels);
+
+        equalizeHist(channels[1], channels[1]);
+
+        Mat result;
+        merge(channels,ycrcb);
+
+        cvtColor(ycrcb,result,cv::COLOR_HSV2BGR);
+
+        return result;
+    }
+    return Mat();
+}
+
+
 bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, bool interrupt)
 {
     int h = frame.cols, w = frame.rows;
@@ -26,6 +50,7 @@ bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, 
     interrupt = waitKey(60) == 'a';
     if (interrupt)
     {
+        frame = equalizeIntensity(frame);
         cvtColor(frame, frame, cv::COLOR_BGR2HSV);
         color1 = getColor(frame, pt1, detectorsR);
         color2 = getColor(frame, pt2, detectorsR);
@@ -38,11 +63,16 @@ bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, 
     return false;
 }
 
+
+
 Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 {
     Point p1, p2;
     double scale = 5;
     Mat img = imgsrc.clone();
+    img = equalizeIntensity(img);
+//    equalizeHist(img,dst);
+    imshow("equ",img);
     cv::resize(img, img, Size(), 1. / scale, 1. / scale);
 //    flipFrame(img);
     cvtColor(img, img, cv::COLOR_BGR2HSV);
@@ -50,8 +80,8 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 //        Mat *result = getColorSegmentedImage(img, *color1, Vec3b(range, range, range));
 //        Vec3b shift = Vec3b(10,255-(*color1)[1],255-(*color1)[2]);
     Scalar c1 = *color1, c2 = *color2;
-    int diff = 8;
-    double r = 0.6;
+    int diff = 15;
+    double r = 0.3;
     Vec3b lower = Vec3b(c1[0] - diff, c1[1] * r, 20);
     Vec3b upper = Vec3b(c1[0] + diff, 255, 255);
 
@@ -82,7 +112,7 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
         pr2 = Point(p2);
         prev = true;
     }
-    int thresh = 7;
+    int thresh = 5;
     if (dis(p1, pr1) <= thresh)
         p1 = pr1;
     else
@@ -120,7 +150,6 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
 //    erode(*segImg, *segImg, Mat(), Point(-1, -1), 1, 1, 1);
 //    imshow("eroded",*segImg);
 //    dilate(*segImg, *segImg, Mat(), Point(-1, -1), 2, 1, 1);
-//    dynamicNoiseReduction(segImg,1800,150);
 //    threshold(*segImg, *segImg, 100, 255, 0);
     vector<ClusterPoint> points;
     for (int i = 0; i < segImg->rows; ++i)
@@ -166,7 +195,7 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
         }
     }
     Clusterer clusterer(points);
-    vector<Cluster> clusters = clusterer.findClusters(2.5);
+    vector<Cluster> clusters = clusterer.findClusters(2);
     cout << "I m out and number of clusters is " << clusters.size() << endl;
     int minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
     int maxSize = 0,index=-1;

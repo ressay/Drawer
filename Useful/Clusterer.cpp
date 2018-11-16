@@ -71,13 +71,13 @@ vector<Cluster> Clusterer::findClusters(double distanceThresh)
                 uni(cl,minCl);
         }
         clusters = generateClusters();
-        cout << "size is: " << size << " clusters: " << clusters.size() << endl;
+//        cout << "size is: " << size << " clusters: " << clusters.size() << endl;
         if(size == clusters.size())
             break;
         size = clusters.size();
     }
-    cout << "did : " << iterations << " iterations! " << endl;
-    cout << "size is: " << size << " clusters: " << clusters.size() << endl;
+//    cout << "did : " << iterations << " iterations! " << endl;
+//    cout << "size is: " << size << " clusters: " << clusters.size() << endl;
     return clusters;
 }
 
