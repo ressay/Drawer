@@ -60,6 +60,7 @@ public:
     bool initDetection(Displayer* displayer, Mat frame,bool interrupt) override;
 
     Detection* getDetectedPoints(Mat img) override;
+    void dynamicNoiseReduction(Mat* img,int var,int size);
 };
 
 

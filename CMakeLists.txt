@@ -7,7 +7,7 @@ find_package( OpenCV REQUIRED )
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5Test REQUIRED)
 
-set(SOURCE_FILES main.cpp main.moc Useful/BasicMethods.h Useful/BasicMethods.cpp Useful/Displayer.cpp Useful/Displayer.h DetectingMethods/DetectionPolicy.cpp DetectingMethods/DetectionPolicy.h testqt.cpp testqt.h qrc_testqt.cpp ui_testqt.h Useful/KeyHandler.cpp Useful/KeyHandler.h Drawing/Drawer.cpp Drawing/Drawer.h Drawing/DrawManager.cpp Drawing/DrawManager.h)
+set(SOURCE_FILES main.cpp main.moc Useful/BasicMethods.h Useful/BasicMethods.cpp Useful/Displayer.cpp Useful/Displayer.h DetectingMethods/DetectionPolicy.cpp DetectingMethods/DetectionPolicy.h testqt.cpp testqt.h qrc_testqt.cpp ui_testqt.h Useful/KeyHandler.cpp Useful/KeyHandler.h Drawing/Drawer.cpp Drawing/Drawer.h Drawing/DrawManager.cpp Drawing/DrawManager.h Useful/Clusterer.cpp Useful/Clusterer.h)
 
 
 include_directories(${OpenCV_INCLUDE_DIRS})

@@ -9,6 +9,7 @@
 #include <DetectingMethods/DetectionPolicy.h>
 #include <Drawing/Drawer.h>
 #include <Drawing/DrawManager.h>
+#include <Useful/BasicMethods.h>
 
 using namespace cv;
 using namespace std;
@@ -48,7 +49,7 @@ void testQT::testClick()  {
     while (true)
     {
         cap >> frame;
-
+        flipFrame(frame);
         Detection* detection = detector->getDetectedPoints(frame);
         detection->updateImg(frame);
         drawer->updateDrawing(detection);
