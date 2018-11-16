@@ -43,6 +43,76 @@ Mat filtreMedianNVG(Mat src, int voisinage){
     return dst;
 }
 
+
+Mat erode(Mat src, int voisinage)
+{
+    Mat dst = src.clone();
+
+    if (voisinage % 2 != 1) return Mat();
+
+    int *voisins = new int[voisinage*voisinage];
+
+    for (int x = 0; x < src.rows; x++){
+        for (int y = 0; y < src.cols; y++){
+            if (x< (voisinage - 1) / 2 || x>(src.rows - 1 - (voisinage - 1) / 2) || y< (voisinage - 1) / 2 ||
+                y>(src.cols - 1 - (voisinage - 1) / 2))
+            {
+                dst.at<uchar>(x, y) = src.at<uchar>(x, y);
+            }
+            else
+            {
+                int sx = x - (voisinage - 1) / 2;
+                int sy = y - (voisinage - 1) / 2;
+                int min = src.at<uchar>(sx,sy);
+
+
+                for (int i = 0; i < voisinage; i++){
+                    for (int j = 0; j < voisinage; j++){
+                        min = src.at<uchar>(sx+i,sy+ j)<min?:min;
+                    }
+                }
+                dst.at<uchar>(x, y) = min;
+            }
+        }
+    }
+    return dst;
+}
+
+
+Mat dilate(Mat src, int voisinage)
+{
+    Mat dst = src.clone();
+
+    if (voisinage % 2 != 1) return Mat();
+
+    int *voisins = new int[voisinage*voisinage];
+
+    for (int x = 0; x < src.rows; x++){
+        for (int y = 0; y < src.cols; y++){
+            if (x< (voisinage - 1) / 2 || x>(src.rows - 1 - (voisinage - 1) / 2) || y< (voisinage - 1) / 2 ||
+                y>(src.cols - 1 - (voisinage - 1) / 2))
+            {
+                dst.at<uchar>(x, y) = src.at<uchar>(x, y);
+            }
+            else
+            {
+                int sx = x - (voisinage - 1) / 2;
+                int sy = y - (voisinage - 1) / 2;
+                int max = src.at<uchar>(sx,sy);
+
+
+                for (int i = 0; i < voisinage; i++){
+                    for (int j = 0; j < voisinage; j++){
+                        max = src.at<uchar>(sx+i,sy+ j)>max?:max;
+                    }
+                }
+                dst.at<uchar>(x, y) = max;
+            }
+        }
+    }
+    return dst;
+}
+
 Mat filtreMoyenNVG(Mat src, int voisinage){
     Mat dst = src.clone();
 //    if (src.channels() != 1 || dst.channels() != 1) return;
@@ -102,6 +172,8 @@ Mat* getColorSegmentedImage(Mat org,const Vec3b& lower, const Vec3b &upper)
     return mat;
 }
 
+
+
 Vec3b* getColor(Mat org,Point pnt,int size)
 {
 //    return new Vec3b(org.at<Vec3b>(pnt));
@@ -131,6 +203,8 @@ Vec3b* getColor(Mat org,Point pnt,int size)
 
 void flipFrame(Mat img)
 {
+//    erode()
+
     Mat frame2 = img.clone();
     for (int i = 0; i < frame2.rows; ++i)
     {
