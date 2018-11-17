@@ -30,6 +30,51 @@ Mat equalizeIntensity(const Mat& inputImage)
     return Mat();
 }
 
+void cluster(Mat img)
+{
+    double scale = 6;
+    Mat imgsrc = img.clone();
+    cv::resize(img, imgsrc, Size(), 1. / scale, 1. / scale);
+    vector<ClusterPoint> points;
+    for (int i = 0; i < imgsrc.rows; ++i)
+    {
+        for (int j = 0; j < imgsrc.cols; ++j)
+        {
+            Vec3b v = imgsrc.at<Vec3b>(i,j);
+            double* vec = new double[5];
+            vec[0] = i; vec[1] = j;
+            vec[2] = v[0]; vec[3] = v[1]; vec[4] = v[2];
+            points.emplace_back(vec,5);
+        }
+    }
+    cout << points.size() << endl;
+    Mat newImg = imgsrc.clone();
+    Clusterer clusterer(points);
+    vector<Cluster> clusters = clusterer.findClusters(5);
+    cout << "I m out and number of clusters is " << clusters.size() << endl;
+    int minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
+    int maxSize = 0,index=-1;
+    for (int k = 0; k < clusters.size(); ++k)
+    {
+//        minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
+//        vector<int> pts = clusters[k].indexes;
+//        if(maxSize < pts.size())
+//        {
+//            maxSize = pts.size();
+//            index = k;
+//        }
+//        for (int i : pts)
+//        {
+//            if(minX > points[i].vec[0]) minX = points[i].vec[0];
+//            if(minY > points[i].vec[1]) minY = points[i].vec[1];
+//            if(maxX < points[i].vec[0]) maxX = points[i].vec[0];
+//            if(maxY < points[i].vec[1]) maxY = points[i].vec[1];
+//        }
+//        rectangle(newImg,Point(minY,minX),Point(maxY,maxX),Scalar(255,0,0));
+        circle(newImg,Point(clusters[k].avg.vec[1],clusters[k].avg.vec[0]),3,Scalar(0,0,255));
+    }
+    imshow("clustered",newImg);
+}
 
 bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, bool interrupt)
 {
@@ -47,6 +92,7 @@ bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, 
             FONT_HERSHEY_COMPLEX_SMALL, 0.8, Scalar(50, 50, 50));
 //    displayer->displayImg(toDraw, "camera");
     imshow("init", toDraw);
+//    cluster(frame);
     interrupt = waitKey(60) == 'a';
     if (interrupt)
     {
@@ -70,18 +116,19 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
     Point p1, p2;
     double scale = 5;
     Mat img = imgsrc.clone();
-    img = equalizeIntensity(img);
+//    img = equalizeIntensity(img);
 //    equalizeHist(img,dst);
-    imshow("equ",img);
+//    imshow("equ",img);
     cv::resize(img, img, Size(), 1. / scale, 1. / scale);
+
 //    flipFrame(img);
     cvtColor(img, img, cv::COLOR_BGR2HSV);
 
 //        Mat *result = getColorSegmentedImage(img, *color1, Vec3b(range, range, range));
 //        Vec3b shift = Vec3b(10,255-(*color1)[1],255-(*color1)[2]);
     Scalar c1 = *color1, c2 = *color2;
-    int diff = 15;
-    double r = 0.3;
+    int diff = 9;
+    double r = 0.4;
     Vec3b lower = Vec3b(c1[0] - diff, c1[1] * r, 20);
     Vec3b upper = Vec3b(c1[0] + diff, 255, 255);
 
@@ -112,7 +159,7 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
         pr2 = Point(p2);
         prev = true;
     }
-    int thresh = 5;
+    int thresh = 6;
     if (dis(p1, pr1) <= thresh)
         p1 = pr1;
     else
@@ -151,19 +198,7 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
 //    imshow("eroded",*segImg);
 //    dilate(*segImg, *segImg, Mat(), Point(-1, -1), 2, 1, 1);
 //    threshold(*segImg, *segImg, 100, 255, 0);
-    vector<ClusterPoint> points;
-    for (int i = 0; i < segImg->rows; ++i)
-    {
-        for (int j = 0; j < segImg->cols; ++j)
-        {
-            if (segImg->at<uchar>(i, j) == 255)
-            {
-                double* vec = new double[2];
-                vec[0] = i; vec[1] = j;
-                points.emplace_back(vec,2);
-            }
-        }
-    }
+
 
 
     int mx = 0, my = 0, count = 0;
@@ -179,8 +214,21 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
 //            }
 //        }
 //    }
-//    if(count)
 //    mx/=count; my/=count;
+
+    vector<ClusterPoint> points;
+    for (int i = 0; i < segImg->rows; ++i)
+    {
+        for (int j = 0; j < segImg->cols; ++j)
+        {
+            if (segImg->at<uchar>(i, j) == 255)
+            {
+                double* vec = new double[2];
+                vec[0] = i; vec[1] = j;
+                points.emplace_back(vec,2);
+            }
+        }
+    }
     Mat newImg = Mat(segImg->rows,segImg->cols,CV_8UC3);
     for (int i = 0; i < segImg->rows; ++i)
     {
@@ -199,21 +247,28 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
     cout << "I m out and number of clusters is " << clusters.size() << endl;
     int minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
     int maxSize = 0,index=-1;
+    double maxScore = -10000000;
     for (int k = 0; k < clusters.size(); ++k)
     {
         minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
         vector<int> pts = clusters[k].indexes;
-        if(maxSize < pts.size())
-        {
-            maxSize = pts.size();
-            index = k;
-        }
+        double avgDistance = 0;
         for (int i : pts)
         {
             if(minX > points[i].vec[0]) minX = points[i].vec[0];
             if(minY > points[i].vec[1]) minY = points[i].vec[1];
             if(maxX < points[i].vec[0]) maxX = points[i].vec[0];
             if(maxY < points[i].vec[1]) maxY = points[i].vec[1];
+            avgDistance += points[i].getDistance(clusters[k].avg);
+        }
+        avgDistance /= pts.size();
+        double side = ((maxX - minX)*(maxY-minY));
+        double score = 0;
+        score = pts.size();
+        if(pts.size() >= points.size()/clusters.size() && maxScore < score)
+        {
+            maxScore = score;
+            index = k;
         }
         rectangle(newImg,Point(minY,minX),Point(maxY,maxX),Scalar(255,0,0));
         circle(newImg,Point(clusters[k].avg.vec[1],clusters[k].avg.vec[0]),3,Scalar(0,0,255));

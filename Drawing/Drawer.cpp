@@ -35,7 +35,7 @@ void Drawer::paint(Point point)
 {
     if(!prevP)
     {
-        circle(img, point, brushSize, color, -1);
+//        circle(img, point, brushSize, color, -1);
         prev = point;
         prevP = true;
     } else

@@ -43,9 +43,10 @@ vector<Cluster> Clusterer::findClusters(double distanceThresh)
 {
     vector<Cluster> clusters = generateClusters();
     int size = clusters.size(),iterations = 0;
+
     while(true)
     {
-        iterations++;
+
         for (int i=0; i < clusters.size();i++)
         {
             double minDis = INT32_MAX;
@@ -55,20 +56,31 @@ vector<Cluster> Clusterer::findClusters(double distanceThresh)
             {
                 Cluster candidate = clusters[j];
                 double dis = cl.getDistance(candidate);
+                iterations++;
                 if(dis < minDis)
                 {
+
                     minDis = dis;
                     minCl = candidate;
+                    dis = distanceThresh;
+                    double s1 = cl.indexes.size(), s2 = minCl.indexes.size();
+                    if(s1 > 1 || s2 > 1)
+                        dis = (dis/2)*sqrt(s1)+(dis/2)*sqrt(s2);
+                    if(minDis <= dis)
+                    {
+                        uni(cl, minCl);
+                        break;
+                    }
                 }
             }
-            double s1 = cl.indexes.size(), s2 = minCl.indexes.size();
-            // fixing threshold to match clusters size
-            double dis = distanceThresh;
-            if(s1 > 1 || s2 > 1)
-            dis = (dis/2)*sqrt(s1)/2+(dis/2)*sqrt(s2)/2;
-//            cout << "dis: " << dis << " s1: " << s1 << " s2: " << s2 << " minDis: " << minDis << endl;
-            if(minDis <= dis)
-                uni(cl,minCl);
+//            double s1 = cl.indexes.size(), s2 = minCl.indexes.size();
+//            // fixing threshold to match clusters size
+//            double dis = distanceThresh;
+//            if(s1 > 1 || s2 > 1)
+//            dis = (dis/2)*sqrt(s1)+(dis/2)*sqrt(s2);
+////            cout << "dis: " << dis << " s1: " << s1 << " s2: " << s2 << " minDis: " << minDis << endl;
+//            if(minDis <= dis)
+//                uni(cl,minCl);
         }
         clusters = generateClusters();
 //        cout << "size is: " << size << " clusters: " << clusters.size() << endl;
@@ -76,7 +88,7 @@ vector<Cluster> Clusterer::findClusters(double distanceThresh)
             break;
         size = clusters.size();
     }
-//    cout << "did : " << iterations << " iterations! " << endl;
+    cout << "did : " << iterations << " iterations! " << endl;
 //    cout << "size is: " << size << " clusters: " << clusters.size() << endl;
     return clusters;
 }
