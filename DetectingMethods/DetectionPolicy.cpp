@@ -243,6 +243,7 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
         }
     }
     Clusterer clusterer(points);
+    
     vector<Cluster> clusters = clusterer.findClusters(2);
     cout << "I m out and number of clusters is " << clusters.size() << endl;
     int minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
