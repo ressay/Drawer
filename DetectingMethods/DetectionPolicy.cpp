@@ -243,9 +243,9 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
         }
     }
     Clusterer clusterer(points);
-    
+
     vector<Cluster> clusters = clusterer.findClusters(2);
-    cout << "I m out and number of clusters is " << clusters.size() << endl;
+//    cout << "I m out and number of clusters is " << clusters.size() << endl;
     int minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
     int maxSize = 0,index=-1;
     double maxScore = -10000000;
@@ -292,7 +292,7 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
     }
     imshow("clusters", newImg);
     imshow("res", *segImg);
-    if (count > 0)
+    if (count > 0 && clusters[index].indexes.size() > 5)
         return {mx, my};
 //        return {(minY+maxY)/2*scale,(minX+maxX)/2*scale};
     else return {-1, -1};
@@ -354,7 +354,7 @@ void DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc,int var,int s
         preS = s;
     }
     if(count) *imgsrc = img;
-    cout << "did " << c << " iterations!" << endl;
+//    cout << "did " << c << " iterations!" << endl;
 }
 
 

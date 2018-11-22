@@ -88,7 +88,7 @@ vector<Cluster> Clusterer::findClusters(double distanceThresh)
             break;
         size = clusters.size();
     }
-    cout << "did : " << iterations << " iterations! " << endl;
+//    cout << "did : " << iterations << " iterations! " << endl;
 //    cout << "size is: " << size << " clusters: " << clusters.size() << endl;
     return clusters;
 }

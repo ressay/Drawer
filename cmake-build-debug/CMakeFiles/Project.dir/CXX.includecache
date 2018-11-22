@@ -113,6 +113,8 @@ DrawManager.h
 /home/ressay/StudiesTPM2/Vision/Project/Drawing/DrawManager.h
 utility
 -
+iostream
+-
 
 /home/ressay/StudiesTPM2/Vision/Project/Drawing/DrawManager.h
 Useful/Displayer.h

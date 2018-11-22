@@ -21,6 +21,7 @@ public:
     bool prevP = false;
 
     Drawer(Size);
+    void init(Size);
     void resetImg(Mat img);
     void paint(int x,int y);
     void paint(Point point);

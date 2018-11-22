@@ -6,8 +6,7 @@
 
 Drawer::Drawer(Size size)
 {
-    img = Mat(size,CV_8UC3);
-    resetImg(img);
+    init(size);
 }
 
 void Drawer::resetImg(Mat img)
@@ -48,6 +47,12 @@ void Drawer::paint(Point point)
 void Drawer::resetPrev()
 {
     prevP = false;
+}
+
+void Drawer::init(Size size)
+{
+    img = Mat(size,CV_8UC3);
+    resetImg(img);
 }
 
 
