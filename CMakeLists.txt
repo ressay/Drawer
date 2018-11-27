@@ -3,7 +3,7 @@ project(Project)
 
 set(CMAKE_CXX_STANDARD 11)
 
-find_package( OpenCV REQUIRED )
+find_package(OpenCV REQUIRED )
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5Test REQUIRED)
 
