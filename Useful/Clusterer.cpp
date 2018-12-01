@@ -52,6 +52,10 @@ vector<Cluster> Clusterer::findClusters(double distanceThresh)
             double minDis = INT32_MAX;
             Cluster cl = clusters[i];
             Cluster minCl = cl;
+            int subse = find(cl);
+            if(clustersDone[subse])
+                continue;
+            bool found = false;
             for (int j = i+1; j < size; ++j)
             {
                 Cluster candidate = clusters[j];
@@ -69,18 +73,13 @@ vector<Cluster> Clusterer::findClusters(double distanceThresh)
                     if(minDis <= dis)
                     {
                         uni(cl, minCl);
+                        found = true;
                         break;
                     }
                 }
             }
-//            double s1 = cl.indexes.size(), s2 = minCl.indexes.size();
-//            // fixing threshold to match clusters size
-//            double dis = distanceThresh;
-//            if(s1 > 1 || s2 > 1)
-//            dis = (dis/2)*sqrt(s1)+(dis/2)*sqrt(s2);
-////            cout << "dis: " << dis << " s1: " << s1 << " s2: " << s2 << " minDis: " << minDis << endl;
-//            if(minDis <= dis)
-//                uni(cl,minCl);
+            if(!found)
+                clustersDone[subse] = true;
         }
         clusters = generateClusters();
 //        cout << "size is: " << size << " clusters: " << clusters.size() << endl;

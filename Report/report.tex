@@ -154,7 +154,7 @@ Soit la couleur choisie H1S1V1, et le pixel candidat HSV, les conditions que doi
 	
 	\item Au début chaque pixel est dans un groupe à part.
 	
-	\item L’algorithme passe par plusieurs itérations de regroupement, à chaque itération deux groupes sont fusionnés si la distance entre leurs centres et inférieur au seuil modifié*.
+	\item L’algorithme passe par plusieurs itérations de regroupement, dans une itération chaque groupe est fusionné avec un autre dont la distance est inférieur au seuil modifié* s'il existe, la fusion des groupes n'est pas parallèle, un groupe peut être fusionné avec un autre créé au cours de la même itération.
 	
 	\item L’algorithme s’arrête quand les groupes ne changent pas après une itération.
 \end{itemize}

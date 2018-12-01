@@ -83,8 +83,10 @@ public:
         N = pnts.size();
         subsets = new Subset[pnts.size()];
         points = new ClusterPoint[pnts.size()];
+        clustersDone = new bool[N];
         for (int i = 0; i < pnts.size(); ++i)
         {
+            clustersDone[i] = false;
             points[i] = pnts[i];
             subsets[i].parent = i;
             subsets[i].rank = 0;
@@ -95,6 +97,7 @@ public:
     }
     Subset* subsets;
     ClusterPoint* points;
+    bool* clustersDone;
     int N;
     int find(int i);
     void uni(int i, int j);
