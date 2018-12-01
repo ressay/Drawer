@@ -117,11 +117,11 @@ Le système se compose principalement de trois modules:
 	\centering
 	\includegraphics[scale=0.75]{imgs/MainDiagram.png}
 	\caption{Schéma du système}
-	\label{fig:machineA}
+	\label{fig:SchemaGlob}
 \end{figure}
 
 \section{Détection de couleurs}
-La détection de couleurs se fait sur une image en HSV, ceci est dû au fait que HSV sépare la valeur de teinte de celle de la luminosité ce qui le rend plus robuste envers les changements de lumière. 
+\paragraph{}La détection de couleurs se fait sur une image en HSV, ceci est dû au fait que HSV sépare la valeur de teinte de celle de la luminosité ce qui le rend plus robuste envers les changements de lumière. 
 
 Ainsi la détection d’une des deux couleur se fait en passant par tous les pixels de l’image et décider pour chaque pixel s’il a la couleur recherché ou non. La décision se fait en testant l’appartenance du pixel à un intervalle de détection. Pour chacune des valeur H,S,V du pixel, on vérifie si cette valeur appartient à un intervalle définit lors du choix de l’utilisateur de la couleur à détecter comme suit: 
 
@@ -133,9 +133,53 @@ Soit la couleur choisie H1S1V1, et le pixel candidat HSV, les conditions que doi
 	
 	\item $20 \leq H \leq 255$: On accepte un intervalle de luminosité large.
 \end{itemize}
-
+\paragraph{}Après avoir sélectionner les pixels qui ont la couleur désirée, on calcule le centre de ces pixels. Ainsi la détection résultera en deux centres, un pour chaque couleur. La distance entre ces deux derniers détermine si le curseur est active. Si la distance est supérieur à un seuil donné le curseur est désactivé, il est active sinon. Quant à la position du curseur elle est représenté par le centre des deux points sus-cités.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/centerExample.png}
+	\caption{Exemple centre de détection}
+	\label{fig:CenterCorrect}
+\end{figure}
+\textbf{Le problème} qui se pose en se limitant à la détection par intervalle c’est qu’elle est extrêmement sensible au bruit. Un pixel aberrant jugé appartenir à l’intervalle va fausser la position du centre, et ainsi un suivi médiocre de la couleur.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/centerExampleE.png}
+	\caption{Exemple centre de détection avec bruit}
+	\label{fig:CenterWrong}
+\end{figure}
 \section{Élimination du bruit par regroupement}
-
+\paragraph{}Pour remédier au problème rencontré. Nous avons opté à éliminer le bruit en regroupant les pixels proches qui sont acceptés. L’algorithme de regroupement fonctionne comme suit:
+\begin{itemize}
+	\item Il prend en paramètre un seuil minimum pour jugé que deux pixels appartiennent au même groupe.
+	
+	\item Au début chaque pixel est dans un groupe à part.
+	
+	\item L’algorithme passe par plusieurs itérations de regroupement, à chaque itération deux groupes sont fusionnés si la distance entre leurs centres et inférieur au seuil modifié*.
+	
+	\item L’algorithme s’arrête quand les groupes ne changent pas après une itération.
+\end{itemize}
+\paragraph{seuil modifié*:}Comme le seuil donné en entré est défini pour regrouper deux pixels, il est donc inadapté pour le fusionnement de deux groupes contenant plus d’un pixel. Le seuil doit être donc ajusté en fonction de la taille des groupes. Nous avons choisi d’utiliser la formule suivante: \textbf{$nouveauSeuil = (seuil/2)*(racine(tailleG1)+racine(tailleG2)$} avec \textbf{$tailleG1$} et \textbf{$tailleG2$} les tailles des groupes un et deux respectivement.\\
+L’intuition derrière cette formule, c’est que la distance entre deux centres de carrés collés est égale à $1/2*cote1+1/2*cote2$, avec cote1 et cote2 les cotés des deux carrés.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/distanceSquares.png}
+	\caption{Exemple distance entre deux carrés collés}
+	\label{fig:DistanceSquares}
+\end{figure}
+Dans notre cas, la taille du coté d’un pixel est l’unité de mesure de distance. La distance entre deux pixels peut être écrite en fonction de la taille de son coté comme suit: \textbf{$(distance/2)*(cotep+cotep)$} avec \textbf{$cotep$} la valeur d’un coté de pixel, comme cotep=1 (l’unité de mesure) la formule précédente se réduit en la valeur de distance.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/distancePixels.png}
+	\caption{Distance entre deux pixels représentant l'unité de mesure}
+	\label{fig:DistancePixels}
+\end{figure}
+Si on projette cela sur un groupe de pixels carré, la taille de son coté est égale à la racine du nombre de pixels, car le nombre de pixels représente la surface du carré, ainsi la formule devient: \textbf{$(distance/2)*(racine(tailleG1)+racine(tailleG2)$}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/GroupeSide.png}
+	\caption{Exemple de coté d'un groupe de pixels}
+	\label{fig:GroupeSide}
+\end{figure}
 \section{Conclusion}
 Kheliahli rak ta3ref xD 
 

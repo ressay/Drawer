@@ -29,7 +29,7 @@ class Detection2Points: public Detection
 public:
     Point p1;
     Point p2;
-    int threshold=90;
+    int threshold=70;
 
 
     Detection2Points(const Point &p1, const Point &p2);

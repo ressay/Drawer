@@ -115,6 +115,7 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 {
     Point p1, p2;
     double scale = 4;
+    bool grouping = true;
     Mat img = imgsrc.clone();
     cv::resize(img,img,Size(640,480));
 //    img = equalizeIntensity(img);
@@ -139,8 +140,10 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 //        Vec3b v = (*color1)*ratio+shift;
 //        cout << v << endl;
 
+    if(!grouping)
     p1 = dynamicNoiseReduction(result);
-//    p1 = getColorPosition(result);
+    else
+    p1 = getColorPosition(result);
     p1 *= scale;
 
 //        circle(img, p1, 7, Scalar(0, 250, 0), -1);
@@ -156,8 +159,10 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 
     Mat *result2 = getColorSegmentedImage(img, lower, upper);
 //        imshow("res2",*result2);
+    if(!grouping)
     p2 = dynamicNoiseReduction(result2);
-//    p2 = getColorPosition(result2);
+    else
+    p2 = getColorPosition(result2);
     p2 *= scale;
     if (!prev)
     {

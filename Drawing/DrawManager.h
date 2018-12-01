@@ -35,6 +35,7 @@ public:
     Scalar selectedHighlight = Scalar(200,120,200);
     vector<Scalar> colors;
     vector<Point> positions;
+    Point clearPosition;
     vector<Point> highlightHover;
     explicit DrawManager2PointsCursor(Displayer *displayer);
     Size getDrawerSize() override;
