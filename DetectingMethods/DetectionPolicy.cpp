@@ -114,13 +114,13 @@ bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, 
 Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 {
     Point p1, p2;
-    double scale = 5;
+    double scale = 4;
     Mat img = imgsrc.clone();
+    cv::resize(img,img,Size(640,480));
 //    img = equalizeIntensity(img);
 //    equalizeHist(img,dst);
 //    imshow("equ",img);
-    cv::resize(img, img, Size(), 1. / scale, 1. / scale);
-
+    cv::resize(img, img, Size(),1./scale,1./scale);
 //    flipFrame(img);
     cvtColor(img, img, cv::COLOR_BGR2HSV);
 
@@ -131,13 +131,16 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
     double r = 0.4;
     Vec3b lower = Vec3b(c1[0] - diff, c1[1] * r, 20);
     Vec3b upper = Vec3b(c1[0] + diff, 255, 255);
-
+//    lower = Vec3b(c1[0] - diff, c1[1] -diff*2, c1[2]-diff*2);
+//    upper = Vec3b(c1[0] + diff, c1[1] +diff*2, c1[2]+diff*2);
 //        img = saturateImg(img,30);
     Mat *result = getColorSegmentedImage(img, lower, upper);
 //        imshow("res1",*result);
 //        Vec3b v = (*color1)*ratio+shift;
 //        cout << v << endl;
-    p1 = getColorPosition(result);
+
+    p1 = dynamicNoiseReduction(result);
+//    p1 = getColorPosition(result);
     p1 *= scale;
 
 //        circle(img, p1, 7, Scalar(0, 250, 0), -1);
@@ -148,10 +151,13 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 //        shift = Vec3b(10,255-(*color2)[1],255-(*color2)[2]);
     lower = Vec3b(c2[0] - diff, c2[1] * r, 20);
     upper = Vec3b(c2[0] + diff, 255, 255);
+//    lower = Vec3b(c2[0] - diff, c2[1] -diff*2, c2[2]-diff*2);
+//    upper = Vec3b(c2[0] + diff, c2[1] +diff*2, c2[2]+diff*2);
 
     Mat *result2 = getColorSegmentedImage(img, lower, upper);
 //        imshow("res2",*result2);
-    p2 = getColorPosition(result2);
+    p2 = dynamicNoiseReduction(result2);
+//    p2 = getColorPosition(result2);
     p2 *= scale;
     if (!prev)
     {
@@ -168,7 +174,7 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
         p2 = pr2;
     else
         pr2 = p2;
-    cvtColor(img, img, cv::COLOR_HSV2BGR);
+//    cvtColor(img, img, cv::COLOR_HSV2BGR);
     delete result;
     delete result2;
 
@@ -179,42 +185,7 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 
 Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
 {
-
-//    Mat filtered = segImg->clone();
-//    Mat filtered2 = filtered.clone();
-//    medianBlur(filtered,filtered2,3);
-    imshow("origin",*segImg);
-//    *segImg = filtreMedianNVG(*segImg,3);
-//    imshow("median", filtered);
-//    filtered = filtreMedianNVG(filtered,5);
-
-//    medianBlur(filtered2,filtered,9);
-//    cv::resize(filtered, *segImg, Size(), scale, scale);
-//    cv::GaussianBlur(*segImg,*segImg,Size(3,3),0);
-
-//    dilate(*segImg, *segImg, Mat(), Point(-1, -1), 1, 1, 1);
-//    imshow("dilated", *segImg);
-//    erode(*segImg, *segImg, Mat(), Point(-1, -1), 1, 1, 1);
-//    imshow("eroded",*segImg);
-//    dilate(*segImg, *segImg, Mat(), Point(-1, -1), 2, 1, 1);
-//    threshold(*segImg, *segImg, 100, 255, 0);
-
-
-
     int mx = 0, my = 0, count = 0;
-//    for (int i = 0; i < segImg->rows; ++i)
-//    {
-//        for (int j = 0; j < segImg->cols; ++j)
-//        {
-//            if (segImg->at<uchar>(i, j) == 255)
-//            {
-//                my += i;
-//                mx += j;
-//                count++;
-//            }
-//        }
-//    }
-//    mx/=count; my/=count;
 
     vector<ClusterPoint> points;
     for (int i = 0; i < segImg->rows; ++i)
@@ -291,70 +262,87 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
         my /= pts.size();
     }
     imshow("clusters", newImg);
-    imshow("res", *segImg);
     if (count > 0 && clusters[index].indexes.size() > 5)
         return {mx, my};
 //        return {(minY+maxY)/2*scale,(minX+maxX)/2*scale};
     else return {-1, -1};
 }
 
-void DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc,int var,int size)
+bool isEmpty(Mat img)
 {
-    int v = var+1,s=size+1,preV=v,preS=s;
-    int c = 0;
-    Mat img = imgsrc->clone();
-    int count = 0;
-    while(v>var || s<size)
+    for (int i = 0; i < img.rows; ++i)
     {
-        c++;
-        int mx = 0, my = 0;
-        count = 0;
-        for (int i = 0; i < img.rows; ++i)
+        for (int j = 0; j < img.cols; ++j)
         {
-            for (int j = 0; j < img.cols; ++j)
-            {
-//                if((int)img->at<uchar>(i, j) != 0)
-//                    cout << "not zero at " << i << "," << j << " is: " << (int)img->at<uchar>(i, j) << endl;
-//                else
-//                    cout << "it s zero damn " << img->at<uchar>(i, j) << endl;
-                if (img.at<uchar>(i, j) == 255)
-                {
-                    my += i;
-                    mx += j;
-                    count++;
-                }
-            }
+            if(img.at<uchar>(i,j) != 0)
+                return false;
         }
-        if(!count)break;
-        int avgX = mx/count;
-        int avgY = my/count;
-        mx = 0; my = 0; count = 0;
-        for (int i = 0; i < img.rows; ++i)
-        {
-            for (int j = 0; j < img.cols; ++j)
-            {
-                if (img.at<uchar>(i, j) == 255)
-                {
-                    my += pow(i-avgX,2);
-                    mx += pow(j-avgY,2);
-                    count++;
-                }
-            }
-        }
-        v = (my>mx)?my:mx;
-        v /= count;
-        s = count;
-        cout << "v: " << v << " s: " << s << endl;
-        if(v > var)
-            erode(img, img, Mat(), Point(-1, -1), 2, 1, 1);
-        else if(s < size)
-            dilate(img, img, Mat(), Point(-1, -1), 2, 1, 1);
-        if(preV == v && preS == s) break;
-        preV = v;
-        preS = s;
     }
-    if(count) *imgsrc = img;
-//    cout << "did " << c << " iterations!" << endl;
+    return true;
+}
+
+bool equals(Mat m1, Mat m2)
+{
+    for (int i = 0; i < m1.rows; ++i)
+    {
+        for (int j = 0; j < m1.cols; ++j)
+        {
+            if(m1.at<uchar>(i,j) != m2.at<uchar>(i,j))
+                return false;
+        }
+    }
+    return true;
+}
+Point DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc)
+{
+    Mat img = imgsrc->clone();
+    Mat toCmp = img.clone();
+    Mat prev = img.clone();
+    Mat elem = getStructuringElement(MORPH_ELLIPSE,Size(3,3));
+    dilate(toCmp,toCmp,elem);
+    while(!isEmpty(img))
+    {
+        prev = img.clone();
+        erode(img,img,elem);
+    }
+    img = prev.clone();
+    do
+    {
+        prev = img.clone();
+        dilate(img,img,elem);
+        for (int i = 0; i < img.rows; ++i)
+        {
+            for (int j = 0; j < img.cols; ++j)
+            {
+                if(img.at<uchar>(i,j) && !toCmp.at<uchar>(i,j))
+                {
+                    img.at<uchar>(i,j) = 0;
+                }
+            }
+        }
+
+    }while(!equals(prev,img));
+    int mx=0,my=0,count=0;
+    for (int i = 0; i < prev.rows; ++i)
+    {
+        for (int j = 0; j < prev.cols; ++j)
+        {
+            if(prev.at<uchar>(i,j))
+            {
+                mx += j;
+                my += i;
+                count++;
+            }
+        }
+    }
+    imshow("origin",*imgsrc);
+    imshow("reduced",prev);
+
+    if(!count)
+        return {-1,-1};
+    mx /= count;
+    my /= count;
+    return {mx,my};
 }
 
 

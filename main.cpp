@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 {
 
     QApplication a(argc, argv);
-    QString style_sheet = readTextFile("/home/weiss/CODES/TP-VISION/Drawer/style.qss");
+    QString style_sheet = readTextFile("style.qss");
     a.setStyleSheet(style_sheet);
 	testQT w;
 	w.show();

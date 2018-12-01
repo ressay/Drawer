@@ -30,7 +30,7 @@
 \usepackage{moreverb}
 \usepackage{xcolor}
 \usepackage{framed}
-\usepackage{arabluatex}
+%\usepackage{arabluatex}
 %\usepackage[algo2e, french, onelanguage, ruled]{algorithm2e}
 \setlist[itemize]{label=\textbullet}
 \usepackage{fancyhdr}
@@ -103,8 +103,37 @@ NOT SURE IF WE'RE GONNA TALK ABOUT ALL OF THESE ( BAH N3AMROU JEDDOU XD )
 \subsection{Qt framework}
 
 \section{Schéma global du système}
-LET ME DO THE DIAGRAMS IF YOU DON'T WANNA
+Le système se compose principalement de trois modules:
+
+\begin{itemize}
+	\item D’abord le module de détection récupère l’image de la caméra pour y détecter les couleurs recherché et génère des informations sur le curseurs i.e sa position et son état.
+	
+	\item Le module de dessin reçoit les informations sur le curseur et les utilise pour générer l’image du dessin.
+	
+	\item Les deux modules précédents envoient leurs résultats à l’interface graphique pour l’affichage.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/MainDiagram.png}
+	\caption{Schéma du système}
+	\label{fig:machineA}
+\end{figure}
+
 \section{Détection de couleurs}
+La détection de couleurs se fait sur une image en HSV, ceci est dû au fait que HSV sépare la valeur de teinte de celle de la luminosité ce qui le rend plus robuste envers les changements de lumière. 
+
+Ainsi la détection d’une des deux couleur se fait en passant par tous les pixels de l’image et décider pour chaque pixel s’il a la couleur recherché ou non. La décision se fait en testant l’appartenance du pixel à un intervalle de détection. Pour chacune des valeur H,S,V du pixel, on vérifie si cette valeur appartient à un intervalle définit lors du choix de l’utilisateur de la couleur à détecter comme suit: 
+
+Soit la couleur choisie H1S1V1, et le pixel candidat HSV, les conditions que doit vérifier le pixel sont:
+\begin{itemize}
+	\item $H1-t \leq H \leq H1+t$ : l’intervalle de teinte dépend fortement de la couleur sélectionnée.
+	
+	\item $S1*0.6 \leq H \leq 255$: l’intervalle de saturation dépend légèrement de la couleur sélectionnée.
+	
+	\item $20 \leq H \leq 255$: On accepte un intervalle de luminosité large.
+\end{itemize}
+
 \section{Élimination du bruit par regroupement}
 
 \section{Conclusion}

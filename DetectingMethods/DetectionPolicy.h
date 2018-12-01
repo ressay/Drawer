@@ -29,7 +29,7 @@ class Detection2Points: public Detection
 public:
     Point p1;
     Point p2;
-    int threshold=70;
+    int threshold=90;
 
 
     Detection2Points(const Point &p1, const Point &p2);
@@ -60,7 +60,7 @@ public:
     bool initDetection(Displayer* displayer, Mat frame,bool interrupt) override;
 
     Detection* getDetectedPoints(Mat img) override;
-    void dynamicNoiseReduction(Mat* img,int var,int size);
+    Point dynamicNoiseReduction(Mat* img);
 };
 
 
