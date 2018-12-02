@@ -21,7 +21,7 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
-
+#include <QtWidgets/QCheckBox>
 QT_BEGIN_NAMESPACE
 
 class Ui_testQTClass
@@ -33,9 +33,11 @@ public:
     QLabel *selfImg;
     QPushButton *b1;
     QLabel *image_lbl;
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
-    QStatusBar *statusBar;
+//    QMenuBar *menuBar;
+//    QToolBar *mainToolBar;
+//    QStatusBar *statusBar;
+    QCheckBox *debug_checkbox;
+    QCheckBox *grouping_checkbox;
 
 
     void setupUi(QMainWindow *testQTClass)
@@ -49,13 +51,22 @@ public:
 //        centralWidget2->setObjectName(QStringLiteral("centralWidget"));
         b1 = new QPushButton(centralWidget);
         b1->setObjectName(QStringLiteral("b1"));
-        b1->setGeometry(QRect(10, 20, 251, 28));
+        b1->setGeometry(QRect(10, 15, 251, 28));
         image_lbl = new QLabel(centralWidget);
         image_lbl->setObjectName(QStringLiteral("image_lbl"));
         image_lbl->setGeometry(QRect(10, 60, drawX, drawY));
         selfImg = new QLabel(centralWidget);
         selfImg->setObjectName(QStringLiteral("selfImg"));
         selfImg->setGeometry(QRect(675, 60, selfX, selfY));
+
+        debug_checkbox = new QCheckBox(centralWidget);
+        debug_checkbox->setGeometry(300,20,70,20);
+        debug_checkbox->setText("Debug");
+
+        grouping_checkbox = new QCheckBox(centralWidget);
+        grouping_checkbox->setGeometry(300+70+10,20,100,20);
+        grouping_checkbox->setText("Grouping");
+
         QFont font;
         font.setBold(false);
         font.setWeight(50);
@@ -66,16 +77,16 @@ public:
         selfImg->setFrameShape(QFrame::Box);
         selfImg->setMargin(0);
         testQTClass->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(testQTClass);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 26));
-        testQTClass->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(testQTClass);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        testQTClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(testQTClass);
-        statusBar->setObjectName(QStringLiteral("statusBar"));
-        testQTClass->setStatusBar(statusBar);
+//        menuBar = new QMenuBar(testQTClass);
+//        menuBar->setObjectName(QStringLiteral("menuBar"));
+//        menuBar->setGeometry(QRect(0, 0, 600, 26));
+//        testQTClass->setMenuBar(menuBar);
+//        mainToolBar = new QToolBar(testQTClass);
+//        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
+//        testQTClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
+//        statusBar = new QStatusBar(testQTClass);
+//        statusBar->setObjectName(QStringLiteral("statusBar"));
+//        testQTClass->setStatusBar(statusBar);
 
         retranslateUi(testQTClass);
 

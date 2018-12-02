@@ -31,7 +31,10 @@ int main(int argc, char *argv[])
 {
 
     QApplication a(argc, argv);
-    QString style_sheet = readTextFile("style.qss");
+    /**
+     * HERE CHANGE THAT ABSOLUTE PATH I COULDN'T SET IT DYNAMICALLY
+     */
+    QString style_sheet = readTextFile("/home/weiss/CODES/TP-VISION/Drawer/style.qss");
     a.setStyleSheet(style_sheet);
 	testQT w;
 	w.show();

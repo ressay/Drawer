@@ -87,18 +87,20 @@ QtWidgets/QToolBar
 -
 QtWidgets/QWidget
 -
+QtWidgets/QCheckBox
+-
 
-/home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.cpp
+/home/weiss/CODES/TP-VISION/Drawer/DetectingMethods/DetectionPolicy.cpp
 iostream
 -
 Useful/Clusterer.h
 -
 DetectionPolicy.h
-/home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.h
+/home/weiss/CODES/TP-VISION/Drawer/DetectingMethods/DetectionPolicy.h
 Useful/BasicMethods.h
-/home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/Useful/BasicMethods.h
+/home/weiss/CODES/TP-VISION/Drawer/DetectingMethods/Useful/BasicMethods.h
 
-/home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.h
+/home/weiss/CODES/TP-VISION/Drawer/DetectingMethods/DetectionPolicy.h
 opencv2/core.hpp
 -
 opencv2/highgui.hpp
@@ -106,67 +108,45 @@ opencv2/highgui.hpp
 opencv2/imgproc.hpp
 -
 Useful/Displayer.h
-/home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/Useful/Displayer.h
+/home/weiss/CODES/TP-VISION/Drawer/DetectingMethods/Useful/Displayer.h
 
-/home/ressay/StudiesTPM2/Vision/Project/Drawing/DrawManager.cpp
+/home/weiss/CODES/TP-VISION/Drawer/Drawing/DrawManager.cpp
 DrawManager.h
-/home/ressay/StudiesTPM2/Vision/Project/Drawing/DrawManager.h
+/home/weiss/CODES/TP-VISION/Drawer/Drawing/DrawManager.h
 utility
 -
 iostream
 -
 
-/home/ressay/StudiesTPM2/Vision/Project/Drawing/DrawManager.h
+/home/weiss/CODES/TP-VISION/Drawer/Drawing/DrawManager.h
 Useful/Displayer.h
 -
 DetectingMethods/DetectionPolicy.h
 -
 Drawer.h
-/home/ressay/StudiesTPM2/Vision/Project/Drawing/Drawer.h
+/home/weiss/CODES/TP-VISION/Drawer/Drawing/Drawer.h
 
-/home/ressay/StudiesTPM2/Vision/Project/Drawing/Drawer.cpp
+/home/weiss/CODES/TP-VISION/Drawer/Drawing/Drawer.cpp
 Drawer.h
-/home/ressay/StudiesTPM2/Vision/Project/Drawing/Drawer.h
+/home/weiss/CODES/TP-VISION/Drawer/Drawing/Drawer.h
 
-/home/ressay/StudiesTPM2/Vision/Project/Drawing/Drawer.h
+/home/weiss/CODES/TP-VISION/Drawer/Drawing/Drawer.h
 Useful/Displayer.h
 -
 
-/home/ressay/StudiesTPM2/Vision/Project/Useful/BasicMethods.cpp
-opencv2/imgproc.hpp
--
-iostream
--
-BasicMethods.h
-/home/ressay/StudiesTPM2/Vision/Project/Useful/BasicMethods.h
-
-/home/ressay/StudiesTPM2/Vision/Project/Useful/BasicMethods.h
+/home/weiss/CODES/TP-VISION/Drawer/Useful/BasicMethods.h
 opencv2/core.hpp
 -
 opencv2/highgui.hpp
 -
 
-/home/ressay/StudiesTPM2/Vision/Project/Useful/Clusterer.cpp
-iostream
--
-Clusterer.h
-/home/ressay/StudiesTPM2/Vision/Project/Useful/Clusterer.h
-
-/home/ressay/StudiesTPM2/Vision/Project/Useful/Clusterer.h
-cmath
--
-vector
-/home/ressay/StudiesTPM2/Vision/Project/Useful/vector
-map
-/home/ressay/StudiesTPM2/Vision/Project/Useful/map
-
-/home/ressay/StudiesTPM2/Vision/Project/Useful/Displayer.cpp
+/home/weiss/CODES/TP-VISION/Drawer/Useful/Displayer.cpp
 QtGui/QPixmap
 -
 Displayer.h
-/home/ressay/StudiesTPM2/Vision/Project/Useful/Displayer.h
+/home/weiss/CODES/TP-VISION/Drawer/Useful/Displayer.h
 
-/home/ressay/StudiesTPM2/Vision/Project/Useful/Displayer.h
+/home/weiss/CODES/TP-VISION/Drawer/Useful/Displayer.h
 opencv2/core.hpp
 -
 opencv2/highgui.hpp
@@ -174,33 +154,21 @@ opencv2/highgui.hpp
 opencv2/imgproc.hpp
 -
 testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/Useful/testqt.h
+/home/weiss/CODES/TP-VISION/Drawer/Useful/testqt.h
 
-/home/ressay/StudiesTPM2/Vision/Project/Useful/KeyHandler.cpp
-KeyHandler.h
-/home/ressay/StudiesTPM2/Vision/Project/Useful/KeyHandler.h
-
-/home/ressay/StudiesTPM2/Vision/Project/Useful/KeyHandler.h
-iostream
--
-vector
--
-opencv2/highgui.hpp
--
-
-/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_testqt.cpp
+/home/weiss/CODES/TP-VISION/Drawer/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_testqt.cpp
 ../../../testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+/home/weiss/CODES/TP-VISION/Drawer/testqt.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/moc_compilation.cpp
+/home/weiss/CODES/TP-VISION/Drawer/cmake-build-debug/Project_autogen/mocs_compilation.cpp
 EWIEGA46WW/moc_testqt.cpp
-/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_testqt.cpp
+/home/weiss/CODES/TP-VISION/Drawer/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_testqt.cpp
 
-/home/ressay/StudiesTPM2/Vision/Project/main.cpp
+/home/weiss/CODES/TP-VISION/Drawer/main.cpp
 iostream
 -
 opencv2/core.hpp
@@ -212,17 +180,15 @@ QtWidgets/QApplication
 QtCore/QFile
 -
 DetectingMethods/DetectionPolicy.h
-/home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.h
+/home/weiss/CODES/TP-VISION/Drawer/DetectingMethods/DetectionPolicy.h
 Useful/BasicMethods.h
-/home/ressay/StudiesTPM2/Vision/Project/Useful/BasicMethods.h
+/home/weiss/CODES/TP-VISION/Drawer/Useful/BasicMethods.h
 testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+/home/weiss/CODES/TP-VISION/Drawer/testqt.h
 
-/home/ressay/StudiesTPM2/Vision/Project/qrc_testqt.cpp
-
-/home/ressay/StudiesTPM2/Vision/Project/testqt.cpp
+/home/weiss/CODES/TP-VISION/Drawer/testqt.cpp
 testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+/home/weiss/CODES/TP-VISION/Drawer/testqt.h
 QtCore
 -
 QtGui
@@ -244,13 +210,13 @@ Drawing/DrawManager.h
 Useful/BasicMethods.h
 -
 
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+/home/weiss/CODES/TP-VISION/Drawer/testqt.h
 QtWidgets/QMainWindow
 -
 ui_testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h
+/home/weiss/CODES/TP-VISION/Drawer/ui_testqt.h
 
-/home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h
+/home/weiss/CODES/TP-VISION/Drawer/ui_testqt.h
 QtCore/QVariant
 -
 QtWidgets/QAction
@@ -274,6 +240,8 @@ QtWidgets/QStatusBar
 QtWidgets/QToolBar
 -
 QtWidgets/QWidget
+-
+QtWidgets/QCheckBox
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
@@ -327,234 +295,40 @@ qvariant.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore
 QtCore/QtCoreDepends
 -
-qabstractanimation.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractanimation.h
-qanimationgroup.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qanimationgroup.h
-qparallelanimationgroup.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qparallelanimationgroup.h
-qpauseanimation.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qpauseanimation.h
-qpropertyanimation.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qpropertyanimation.h
-qsequentialanimationgroup.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsequentialanimationgroup.h
-qvariantanimation.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariantanimation.h
-qtextcodec.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextcodec.h
-qcompilerdetection.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
-qendian.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qendian.h
-qflags.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 qglobal.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
-qglobalstatic.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h
-qisenum.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qisenum.h
-qlibraryinfo.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qlibraryinfo.h
-qnamespace.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h
-qnumeric.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h
-qprocessordetection.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
-qsysinfo.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
-qsystemdetection.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
-qtypeinfo.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
-qtypetraits.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
-qbuffer.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbuffer.h
-qdatastream.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
-qdebug.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
-qdir.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdir.h
-qdiriterator.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdiriterator.h
-qfile.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
-qfiledevice.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
-qfileinfo.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfileinfo.h
-qfileselector.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfileselector.h
-qfilesystemwatcher.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfilesystemwatcher.h
-qiodevice.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h
-qlockfile.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qlockfile.h
-qloggingcategory.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qloggingcategory.h
-qprocess.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
-qresource.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qresource.h
-qsavefile.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsavefile.h
-qsettings.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
-qstandardpaths.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
-qstorageinfo.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstorageinfo.h
-qtemporarydir.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporarydir.h
-qtemporaryfile.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporaryfile.h
-qtextstream.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
-qurl.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
-qurlquery.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
-qabstractitemmodel.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
-qabstractproxymodel.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h
-qidentityproxymodel.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qidentityproxymodel.h
-qitemselectionmodel.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h
-qsortfilterproxymodel.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h
-qstringlistmodel.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
-qjsonarray.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonarray.h
-qjsondocument.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsondocument.h
-qjsonobject.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonobject.h
-qjsonvalue.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonvalue.h
+qabstractanimation.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractanimation.h
 qabstracteventdispatcher.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstracteventdispatcher.h
+qabstractitemmodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
 qabstractnativeeventfilter.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractnativeeventfilter.h
-qbasictimer.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
-qcoreapplication.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
-qcoreevent.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
-qeventloop.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
-qmath.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h
-qmetaobject.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetaobject.h
-qmetatype.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
-qmimedata.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmimedata.h
-qobject.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h
-qobjectcleanuphandler.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectcleanuphandler.h
-qobjectdefs.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h
-qpointer.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qpointer.h
-qsharedmemory.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedmemory.h
-qsignalmapper.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsignalmapper.h
-qsocketnotifier.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsocketnotifier.h
-qsystemsemaphore.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemsemaphore.h
-qtimer.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
-qtranslator.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h
-qvariant.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
-qwineventnotifier.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h
-qmimedatabase.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmimedatabase.h
-qmimetype.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmimetype.h
-qfactoryinterface.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfactoryinterface.h
-qlibrary.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qlibrary.h
-qplugin.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qplugin.h
-qpluginloader.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qpluginloader.h
-quuid.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/quuid.h
+qabstractproxymodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h
 qabstractstate.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractstate.h
 qabstracttransition.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstracttransition.h
-qeventtransition.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qeventtransition.h
-qfinalstate.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfinalstate.h
-qhistorystate.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qhistorystate.h
-qsignaltransition.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsignaltransition.h
-qstate.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstate.h
-qstatemachine.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstatemachine.h
-qatomic.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
-qexception.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qexception.h
-qfuture.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfuture.h
-qfutureinterface.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfutureinterface.h
-qfuturesynchronizer.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfuturesynchronizer.h
-qfuturewatcher.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfuturewatcher.h
-qgenericatomic.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
-qmutex.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
-qreadwritelock.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h
-qresultstore.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qresultstore.h
-qrunnable.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qrunnable.h
-qsemaphore.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsemaphore.h
-qthread.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
-qthreadpool.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qthreadpool.h
-qthreadstorage.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qthreadstorage.h
-qwaitcondition.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qwaitcondition.h
 qalgorithms.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
+qanimationgroup.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qanimationgroup.h
 qarraydata.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 qarraydataops.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydataops.h
 qarraydatapointer.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydatapointer.h
+qatomic.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
+qbasictimer.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
 qbitarray.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbitarray.h
+qbuffer.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbuffer.h
 qbytearray.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
 qbytearraylist.h
@@ -571,22 +345,98 @@ qcommandlineoption.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcommandlineoption.h
 qcommandlineparser.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcommandlineparser.h
+qcompilerdetection.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
 qcontainerfwd.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
 qcontiguouscache.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
+qcoreapplication.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
+qcoreevent.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 qcryptographichash.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcryptographichash.h
+qdatastream.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
 qdatetime.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
+qdeadlinetimer.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdeadlinetimer.h
+qdebug.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
+qdir.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdir.h
+qdiriterator.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdiriterator.h
 qeasingcurve.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qeasingcurve.h
 qelapsedtimer.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qelapsedtimer.h
+qendian.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qendian.h
+qeventloop.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
+qeventtransition.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qeventtransition.h
+qexception.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qexception.h
+qfactoryinterface.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfactoryinterface.h
+qfile.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
+qfiledevice.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
+qfileinfo.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfileinfo.h
+qfileselector.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfileselector.h
+qfilesystemwatcher.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfilesystemwatcher.h
+qfinalstate.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfinalstate.h
+qflags.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
+qfuture.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfuture.h
+qfutureinterface.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfutureinterface.h
+qfuturesynchronizer.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfuturesynchronizer.h
+qfuturewatcher.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfuturewatcher.h
+qgenericatomic.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
+qglobalstatic.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h
 qhash.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h
+qhashfunctions.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qhashfunctions.h
+qhistorystate.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qhistorystate.h
+qidentityproxymodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qidentityproxymodel.h
+qiodevice.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h
+qisenum.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qisenum.h
+qitemselectionmodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h
 qiterator.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
+qjsonarray.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonarray.h
+qjsondocument.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsondocument.h
+qjsonobject.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonobject.h
+qjsonvalue.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonvalue.h
+qlibrary.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlibrary.h
+qlibraryinfo.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlibraryinfo.h
 qline.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
 qlinkedlist.h
@@ -595,18 +445,68 @@ qlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
 qlocale.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
+qlockfile.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlockfile.h
+qloggingcategory.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qloggingcategory.h
 qmap.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 qmargins.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
+qmath.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h
 qmessageauthenticationcode.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmessageauthenticationcode.h
+qmetaobject.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetaobject.h
+qmetatype.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
+qmimedata.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmimedata.h
+qmimedatabase.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmimedatabase.h
+qmimetype.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmimetype.h
+qmutex.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
+qnamespace.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h
+qnumeric.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h
+qobject.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h
+qobjectcleanuphandler.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectcleanuphandler.h
+qobjectdefs.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h
+qoperatingsystemversion.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qoperatingsystemversion.h
 qpair.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h
+qparallelanimationgroup.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qparallelanimationgroup.h
+qpauseanimation.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qpauseanimation.h
+qplugin.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qplugin.h
+qpluginloader.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qpluginloader.h
 qpoint.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
+qpointer.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qpointer.h
+qprocess.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
+qprocessordetection.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
+qpropertyanimation.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qpropertyanimation.h
 qqueue.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qqueue.h
+qrandom.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
+qreadwritelock.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h
 qrect.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
 qrefcount.h
@@ -615,38 +515,124 @@ qregexp.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 qregularexpression.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h
+qresource.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qresource.h
+qresultstore.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qresultstore.h
+qrunnable.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrunnable.h
+qsavefile.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsavefile.h
 qscopedpointer.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
 qscopedvaluerollback.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedvaluerollback.h
+qsemaphore.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsemaphore.h
+qsequentialanimationgroup.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsequentialanimationgroup.h
 qset.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+qsettings.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 qshareddata.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
+qsharedmemory.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedmemory.h
 qsharedpointer.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
+qsignalmapper.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsignalmapper.h
+qsignaltransition.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsignaltransition.h
 qsize.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+qsocketnotifier.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsocketnotifier.h
+qsortfilterproxymodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h
 qstack.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstack.h
+qstandardpaths.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
+qstate.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstate.h
+qstatemachine.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstatemachine.h
+qstorageinfo.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstorageinfo.h
 qstring.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
+qstringalgorithms.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
 qstringbuilder.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
 qstringlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
+qstringlistmodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
+qstringliteral.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
 qstringmatcher.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
+qstringview.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
+qsysinfo.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
+qsystemdetection.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+qsystemsemaphore.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemsemaphore.h
+qtemporarydir.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporarydir.h
+qtemporaryfile.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporaryfile.h
 qtextboundaryfinder.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextboundaryfinder.h
+qtextcodec.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextcodec.h
+qtextstream.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+qthread.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
+qthreadpool.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qthreadpool.h
+qthreadstorage.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qthreadstorage.h
 qtimeline.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimeline.h
+qtimer.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
 qtimezone.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimezone.h
+qtranslator.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h
+qtypeinfo.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
+qtypetraits.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+qurl.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
+qurlquery.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
+quuid.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/quuid.h
+qvariant.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
+qvariantanimation.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariantanimation.h
 qvarlengtharray.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 qvector.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+qversionnumber.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qversionnumber.h
+qversiontagging.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+qwaitcondition.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qwaitcondition.h
+qwineventnotifier.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h
 qxmlstream.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h
 qtcoreversion.h
@@ -695,6 +681,8 @@ QtCore/qlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 QtCore/qglobal.h
 -
+intrin.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qanimationgroup.h
 QtCore/qabstractanimation.h
@@ -724,18 +712,6 @@ QtCore/qglobal.h
 QtCore/qbasicatomic.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_armv5.h
-QtCore/qgenericatomic.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_armv6.h
-QtCore/qgenericatomic.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_armv7.h
-QtCore/qatomic_armv6.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore/qatomic_armv6.h
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_bootstrap.h
 QtCore/qgenericatomic.h
 -
@@ -746,29 +722,7 @@ QtCore/qgenericatomic.h
 atomic
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_gcc.h
-QtCore/qgenericatomic.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_ia64.h
-QtCore/qgenericatomic.h
--
-ia64intrin.h
--
-ia64/sys/inline.h
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_msvc.h
-QtCore/qgenericatomic.h
--
-winbase.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_unix.h
-QtCore/qgenericatomic.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_x86.h
 QtCore/qgenericatomic.h
 -
 
@@ -779,25 +733,7 @@ QtCore/qatomic_bootstrap.h
 -
 QtCore/qatomic_cxx11.h
 -
-QtCore/qatomic_gcc.h
--
 QtCore/qatomic_msvc.h
--
-QtCore/qatomic_armv7.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore/qatomic_armv7.h
-QtCore/qatomic_armv6.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore/qatomic_armv6.h
-QtCore/qatomic_armv5.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore/qatomic_armv5.h
-QtCore/qatomic_ia64.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore/qatomic_ia64.h
-QtCore/qatomic_x86.h
--
-QtCore/qatomic_cxx11.h
--
-QtCore/qatomic_gcc.h
--
-QtCore/qatomic_unix.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
@@ -831,7 +767,7 @@ stdarg.h
 -
 string
 -
-QtCore/qstring.h
+iterator
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
@@ -880,6 +816,8 @@ QtCore/qglobal.h
 utility
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig-bootstrapped.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
@@ -919,6 +857,8 @@ QtCore/qobjectdefs.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcryptographichash.h
 QtCore/qbytearray.h
 -
+QtCore/qobjectdefs.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
 QtCore/qscopedpointer.h
@@ -936,6 +876,18 @@ QtCore/qnamespace.h
 QtCore/qshareddata.h
 -
 limits
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdeadlinetimer.h
+QtCore/qelapsedtimer.h
+-
+QtCore/qmetatype.h
+-
+QtCore/qnamespace.h
+-
+limits
+-
+chrono
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
@@ -958,6 +910,16 @@ QtCore/qvector.h
 QtCore/qset.h
 -
 QtCore/qcontiguouscache.h
+-
+QtCore/qsharedpointer.h
+-
+vector
+-
+list
+-
+map
+-
+utility
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdir.h
@@ -1009,8 +971,6 @@ QtCore/qcoreevent.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qexception.h
-QtCore/qglobal.h
--
 QtCore/qatomic.h
 -
 QtCore/qshareddata.h
@@ -1023,8 +983,6 @@ QtCore/qobject.h
 -
 QtCore/qstringlist.h
 -
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
 QtCore/qfiledevice.h
@@ -1067,10 +1025,6 @@ QtCore/qabstractstate.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 QtCore/qglobal.h
 -
-QtCore/qtypeinfo.h
--
-QtCore/qtypetraits.h
--
 initializer_list
 -
 
@@ -1109,13 +1063,21 @@ QtCore/qtypeinfo.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
+type_traits
+-
 cstddef
+-
+utility
+-
+assert.h
 -
 stddef.h
 -
+QtCore/qconfig-bootstrapped.h
+-
 QtCore/qconfig.h
 -
-QtCore/qfeatures.h
+QtCore/qtcore-config.h
 -
 QtCore/qsystemdetection.h
 -
@@ -1139,6 +1101,8 @@ QtCore/qglobalstatic.h
 -
 QtCore/qnumeric.h
 -
+QtCore/qversiontagging.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h
 QtCore/qglobal.h
@@ -1155,13 +1119,21 @@ QtCore/qiterator.h
 -
 QtCore/qlist.h
 -
-QtCore/qpair.h
--
 QtCore/qrefcount.h
 -
-numeric
+QtCore/qhashfunctions.h
 -
 initializer_list
+-
+algorithm
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qhashfunctions.h
+QtCore/qstring.h
+-
+QtCore/qpair.h
+-
+numeric
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qhistorystate.h
@@ -1187,10 +1159,10 @@ QtCore/qstring.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qisenum.h
 QtCore/qglobal.h
 -
-QtCore/qtypetraits.h
--
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h
+QtCore/qglobal.h
+-
 QtCore/qset.h
 -
 QtCore/qvector.h
@@ -1241,6 +1213,8 @@ QtCore/qstring.h
 -
 QtCore/qdatetime.h
 -
+QtCore/qversionnumber.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
 QtCore/qpoint.h
@@ -1268,6 +1242,8 @@ QtCore/qiterator.h
 QtCore/qrefcount.h
 -
 QtCore/qarraydata.h
+-
+QtCore/qhashfunctions.h
 -
 iterator
 -
@@ -1331,6 +1307,8 @@ map
 -
 new
 -
+functional
+-
 initializer_list
 -
 
@@ -1340,6 +1318,8 @@ QtCore/qnamespace.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h
 QtCore/qglobal.h
+-
+QtCore/qalgorithms.h
 -
 cmath
 -
@@ -1362,10 +1342,6 @@ QtCore/qatomic.h
 QtCore/qbytearray.h
 -
 QtCore/qvarlengtharray.h
--
-QtCore/qisenum.h
--
-QtCore/qtypetraits.h
 -
 QtCore/qobjectdefs.h
 -
@@ -1393,6 +1369,8 @@ QtCore/qstringlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmimetype.h
 QtCore/qglobal.h
 -
+QtCore/qobjectdefs.h
+-
 QtCore/qshareddata.h
 -
 QtCore/qstring.h
@@ -1404,6 +1382,10 @@ QtCore/qglobal.h
 QtCore/qatomic.h
 -
 new
+-
+chrono
+-
+limits
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h
@@ -1431,6 +1413,8 @@ QtCore/qmetatype.h
 -
 QtCore/qobject_impl.h
 -
+chrono
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h
 
@@ -1446,6 +1430,10 @@ QtCore/qobjectdefs_impl.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h
 QtCore/qnamespace.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qoperatingsystemversion.h
+QtCore/qglobal.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h
@@ -1469,6 +1457,8 @@ QtCore/qjsonobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpluginloader.h
+QtCore/qglobal.h
+-
 QtCore/qlibrary.h
 -
 QtCore/qplugin.h
@@ -1481,6 +1471,8 @@ QtCore/qnamespace.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpointer.h
 QtCore/qsharedpointer.h
 -
+QtCore/qtypeinfo.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
 QtCore/qiodevice.h
@@ -1488,6 +1480,8 @@ QtCore/qiodevice.h
 QtCore/qstringlist.h
 -
 QtCore/qshareddata.h
+-
+functional
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
@@ -1500,6 +1494,14 @@ QtCore/qvariantanimation.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qqueue.h
 QtCore/qlist.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
+QtCore/qglobal.h
+-
+algorithm
+-
+random
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h
@@ -1545,10 +1547,10 @@ QtCore/qstringlist.h
 -
 QtCore/qlist.h
 -
+QtCore/qscopedpointer.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qresultstore.h
-QtCore/qglobal.h
--
 QtCore/qmap.h
 -
 QtCore/qdebug.h
@@ -1589,6 +1591,8 @@ QtCore/qhash.h
 -
 initializer_list
 -
+iterator
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 QtCore/qobject.h
@@ -1608,6 +1612,8 @@ QtCore/qglobal.h
 QtCore/qatomic.h
 -
 QtCore/qhash.h
+-
+QtCore/qhashfunctions.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedmemory.h
@@ -1633,7 +1639,7 @@ QtCore/qobject.h
 -
 QtCore/qhash.h
 -
-utility
+QtCore/qhashfunctions.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsignalmapper.h
@@ -1642,6 +1648,8 @@ QtCore/qobject.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsignaltransition.h
 QtCore/qabstracttransition.h
+-
+QtCore/qmetaobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
@@ -1664,6 +1672,8 @@ QtCore/qvector.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
 QtCore/qstringlist.h
+-
+QtCore/qobjectdefs.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstate.h
@@ -1711,11 +1721,23 @@ QtCore/qrefcount.h
 -
 QtCore/qnamespace.h
 -
+QtCore/qstringliteral.h
+-
+QtCore/qstringalgorithms.h
+-
+QtCore/qstringview.h
+-
 string
+-
+iterator
 -
 stdarg.h
 -
 QtCore/qstringbuilder.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
+QtCore/qnamespace.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
@@ -1744,8 +1766,24 @@ QtCore/qabstractitemmodel.h
 QtCore/qstringlist.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
+QtCore/qarraydata.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 QtCore/qstring.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
+QtCore/qchar.h
+-
+QtCore/qbytearray.h
+-
+QtCore/qstringliteral.h
+-
+QtCore/qstringalgorithms.h
+-
+string
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
@@ -1771,15 +1809,15 @@ QtCore/qscopedpointer.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qt_windows.h
 windows.h
 -
-ceconfig.h
--
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporarydir.h
 QtCore/qdir.h
 -
-QtCore/QScopedPointer
+QtCore/qscopedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporaryfile.h
@@ -1817,6 +1855,10 @@ stdio.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
 QtCore/qobject.h
 -
+future
+-
+functional
+-
 limits.h
 -
 
@@ -1845,6 +1887,8 @@ QtCore/qbasictimer.h
 -
 QtCore/qobject.h
 -
+chrono
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimezone.h
 QtCore/qshareddata.h
@@ -1861,14 +1905,12 @@ QtCore/qbytearray.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
-QtCore/qtypetraits.h
+QtCore/qglobal.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
 QtCore/qglobal.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore/qglobal.h
-utility
--
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
 QtCore/qbytearray.h
@@ -1921,6 +1963,8 @@ QtCore/qobject.h
 -
 QtCore/qbytearraylist.h
 -
+variant
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariantanimation.h
 QtCore/qeasingcurve.h
@@ -1951,6 +1995,8 @@ algorithm
 -
 initializer_list
 -
+iterator
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 QtCore/qalgorithms.h
@@ -1962,6 +2008,8 @@ QtCore/qlist.h
 QtCore/qrefcount.h
 -
 QtCore/qarraydata.h
+-
+QtCore/qhashfunctions.h
 -
 iterator
 -
@@ -1976,6 +2024,22 @@ initializer_list
 algorithm
 -
 QtCore/qpoint.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qversionnumber.h
+QtCore/qnamespace.h
+-
+QtCore/qstring.h
+-
+QtCore/qvector.h
+-
+QtCore/qmetatype.h
+-
+QtCore/qtypeinfo.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+QtCore/qglobal.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qwaitcondition.h
@@ -2001,6 +2065,14 @@ QtCore/qscopedpointer.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage
 qimage.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix3x3
+qgenericmatrix.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix4x4
+qmatrix4x4.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext
 qopenglcontext.h
@@ -2033,6 +2105,10 @@ qwindow.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui
 QtGui/QtGuiDepends
 -
+qtguiglobal.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h
+qabstracttextdocumentlayout.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h
 qaccessible.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessible.h
 qaccessiblebridge.h
@@ -2041,8 +2117,42 @@ qaccessibleobject.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleobject.h
 qaccessibleplugin.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleplugin.h
+qbackingstore.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qbackingstore.h
 qbitmap.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbitmap.h
+qbrush.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
+qclipboard.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qclipboard.h
+qcolor.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
+qcursor.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+qdesktopservices.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
+qdrag.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qdrag.h
+qevent.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
+qfont.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
+qfontdatabase.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qfontdatabase.h
+qfontinfo.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
+qfontmetrics.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
+qgenericmatrix.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h
+qgenericplugin.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericplugin.h
+qgenericpluginfactory.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericpluginfactory.h
+qglyphrun.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h
+qguiapplication.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h
 qicon.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
 qiconengine.h
@@ -2057,84 +2167,28 @@ qimagereader.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagereader.h
 qimagewriter.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagewriter.h
-qmovie.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qmovie.h
-qpicture.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpicture.h
-qpictureformatplugin.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpictureformatplugin.h
-qpixmap.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
-qpixmapcache.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmapcache.h
-qstandarditemmodel.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qstandarditemmodel.h
-qclipboard.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qclipboard.h
-qcursor.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
-qdrag.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qdrag.h
-qevent.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
-qgenericplugin.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericplugin.h
-qgenericpluginfactory.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericpluginfactory.h
-qguiapplication.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h
 qinputmethod.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
 qkeysequence.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
-qoffscreensurface.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qoffscreensurface.h
-qopenglcontext.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
-qopenglwindow.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h
-qpaintdevicewindow.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h
-qpalette.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
-qpixelformat.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
-qrasterwindow.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qrasterwindow.h
-qscreen.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qscreen.h
-qsessionmanager.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qsessionmanager.h
-qstylehints.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qstylehints.h
-qsurface.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h
-qsurfaceformat.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
-qtouchdevice.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
-qwindow.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h
-qwindowdefs.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
-qgenericmatrix.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h
+qmatrix.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
 qmatrix4x4.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h
-qquaternion.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h
-qvector2d.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
-qvector3d.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h
-qvector4d.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
+qmovie.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qmovie.h
+qoffscreensurface.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qoffscreensurface.h
 qopengl.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
 qopenglbuffer.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglbuffer.h
+qopenglcontext.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
 qopengldebug.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengldebug.h
+qopenglextrafunctions.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglextrafunctions.h
 qopenglframebufferobject.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h
 qopenglfunctions.h
@@ -2147,20 +2201,16 @@ qopenglshaderprogram.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglshaderprogram.h
 qopengltexture.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltexture.h
+qopengltextureblitter.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltextureblitter.h
 qopengltimerquery.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltimerquery.h
 qopenglversionfunctions.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
 qopenglvertexarrayobject.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglvertexarrayobject.h
-qbackingstore.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qbackingstore.h
-qbrush.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
-qcolor.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
-qmatrix.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
+qopenglwindow.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h
 qpagedpaintdevice.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h
 qpagelayout.h
@@ -2169,40 +2219,58 @@ qpagesize.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagesize.h
 qpaintdevice.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+qpaintdevicewindow.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h
 qpaintengine.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h
 qpainter.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
 qpainterpath.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
+qpalette.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
 qpdfwriter.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpdfwriter.h
 qpen.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
+qpicture.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpicture.h
+qpictureformatplugin.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpictureformatplugin.h
+qpixelformat.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
+qpixmap.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
+qpixmapcache.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmapcache.h
 qpolygon.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
+qquaternion.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h
+qrasterwindow.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qrasterwindow.h
+qrawfont.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h
 qregion.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
 qrgb.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
-qtransform.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
-qabstracttextdocumentlayout.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h
-qfont.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
-qfontdatabase.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qfontdatabase.h
-qfontinfo.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
-qfontmetrics.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
-qglyphrun.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h
-qrawfont.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h
+qrgba64.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h
+qscreen.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qscreen.h
+qsessionmanager.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qsessionmanager.h
+qstandarditemmodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qstandarditemmodel.h
 qstatictext.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qstatictext.h
+qstylehints.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qstylehints.h
+qsurface.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h
+qsurfaceformat.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
 qsyntaxhighlighter.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h
 qtextcursor.h
@@ -2225,10 +2293,22 @@ qtextoption.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
 qtexttable.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtexttable.h
-qdesktopservices.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
+qtouchdevice.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
+qtransform.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
 qvalidator.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h
+qvector2d.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
+qvector3d.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h
+qvector4d.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
+qwindow.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h
+qwindowdefs.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
 qtguiversion.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
 
@@ -2237,6 +2317,8 @@ QtCore/QtCore
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 QtGui/qtextlayout.h
@@ -2249,7 +2331,7 @@ QtGui/qpalette.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessible.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qcoreapplication.h
 -
@@ -2275,22 +2357,30 @@ stdlib.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessiblebridge.h
+QtGui/qtguiglobal.h
+-
 QtCore/qplugin.h
 -
 QtCore/qfactoryinterface.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleobject.h
+QtGui/qtguiglobal.h
+-
 QtGui/qaccessible.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleplugin.h
+QtGui/qtguiglobal.h
+-
 QtGui/qaccessible.h
 -
 QtCore/qfactoryinterface.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbackingstore.h
+QtGui/qtguiglobal.h
+-
 QtCore/qrect.h
 -
 QtGui/qwindow.h
@@ -2299,10 +2389,14 @@ QtGui/qregion.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbitmap.h
+QtGui/qtguiglobal.h
+-
 QtGui/qpixmap.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
+QtGui/qtguiglobal.h
+-
 QtCore/qpair.h
 -
 QtCore/qpoint.h
@@ -2323,37 +2417,49 @@ QtGui/qpixmap.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qclipboard.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
+QtGui/qtguiglobal.h
+-
 QtGui/qrgb.h
 -
 QtCore/qnamespace.h
 -
 QtCore/qstringlist.h
 -
+QtGui/qrgba64.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+QtGui/qtguiglobal.h
+-
 QtCore/qpoint.h
 -
 QtGui/qwindowdefs.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
+QtGui/qtguiglobal.h
+-
 QtCore/qstring.h
 -
 QtCore/qstandardpaths.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qdrag.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
-QtGui/qwindowdefs.h
+QtGui/qtguiglobal.h
 -
-QtCore/qobject.h
+QtGui/qwindowdefs.h
 -
 QtGui/qregion.h
 -
@@ -2383,6 +2489,8 @@ QtGui/qtouchdevice.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
+QtGui/qtguiglobal.h
+-
 QtGui/qwindowdefs.h
 -
 QtCore/qstring.h
@@ -2391,6 +2499,8 @@ QtCore/qsharedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontdatabase.h
+QtGui/qtguiglobal.h
+-
 QtGui/qwindowdefs.h
 -
 QtCore/qstring.h
@@ -2399,12 +2509,16 @@ QtGui/qfont.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
+QtGui/qtguiglobal.h
+-
 QtGui/qfont.h
 -
 QtCore/qsharedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
+QtGui/qtguiglobal.h
+-
 QtGui/qfont.h
 -
 QtCore/qsharedpointer.h
@@ -2413,6 +2527,8 @@ QtCore/qrect.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h
+QtGui/qtguiglobal.h
+-
 QtCore/qmetatype.h
 -
 QtCore/qdebug.h
@@ -2421,16 +2537,22 @@ QtCore/qdatastream.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericplugin.h
+QtGui/qtguiglobal.h
+-
 QtCore/qplugin.h
 -
 QtCore/qfactoryinterface.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericpluginfactory.h
+QtGui/qtguiglobal.h
+-
 QtCore/qstringlist.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h
+QtGui/qtguiglobal.h
+-
 QtCore/qsharedpointer.h
 -
 QtCore/qvector.h
@@ -2441,6 +2563,8 @@ QtGui/qrawfont.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h
+QtGui/qtguiglobal.h
+-
 QtCore/qcoreapplication.h
 -
 QtGui/qwindowdefs.h
@@ -2455,7 +2579,7 @@ QtCore/qsize.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qsize.h
 -
@@ -2465,7 +2589,7 @@ QtGui/qpixmap.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qiconengine.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qlist.h
 -
@@ -2473,19 +2597,25 @@ QtGui/qicon.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qiconengineplugin.h
+QtGui/qtguiglobal.h
+-
 QtCore/qplugin.h
 -
 QtCore/qfactoryinterface.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
-QtGui/qtransform.h
+QtGui/qtguiglobal.h
 -
-QtGui/qpaintdevice.h
+QtGui/qcolor.h
 -
 QtGui/qrgb.h
 -
+QtGui/qpaintdevice.h
+-
 QtGui/qpixelformat.h
+-
+QtGui/qtransform.h
 -
 QtCore/qbytearray.h
 -
@@ -2497,6 +2627,8 @@ QtCore/qstringlist.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimageiohandler.h
+QtGui/qtguiglobal.h
+-
 QtCore/qiodevice.h
 -
 QtCore/qplugin.h
@@ -2507,6 +2639,8 @@ QtCore/qscopedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagereader.h
+QtGui/qtguiglobal.h
+-
 QtCore/qbytearray.h
 -
 QtCore/qcoreapplication.h
@@ -2517,6 +2651,8 @@ QtGui/qimageiohandler.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagewriter.h
+QtGui/qtguiglobal.h
+-
 QtCore/qbytearray.h
 -
 QtCore/qcoreapplication.h
@@ -2527,11 +2663,13 @@ QtGui/qimageiohandler.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
-QtCore/qnamespace.h
+QtGui/qtguiglobal.h
 -
 QtCore/qstring.h
 -
@@ -2539,6 +2677,8 @@ QtCore/qobjectdefs.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
+QtGui/qtguiglobal.h
+-
 QtGui/qpolygon.h
 -
 QtGui/qregion.h
@@ -2553,6 +2693,8 @@ QtCore/qrect.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h
+QtGui/qtguiglobal.h
+-
 QtGui/qvector3d.h
 -
 QtGui/qvector4d.h
@@ -2565,6 +2707,8 @@ QtCore/qrect.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qmovie.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 QtCore/qbytearray.h
@@ -2575,13 +2719,15 @@ QtGui/qimagereader.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qoffscreensurface.h
+QtGui/qtguiglobal.h
+-
 QtCore/QObject
 -
 QtGui/qsurface.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qt_windows.h
 -
@@ -2592,6 +2738,8 @@ OpenGLES/ES3/glext.h
 OpenGLES/ES2/gl.h
 -
 OpenGLES/ES2/glext.h
+-
+GLES3/gl32.h
 -
 GLES3/gl31.h
 -
@@ -2609,6 +2757,8 @@ OpenGL/glext.h
 -
 GL/gl.h
 -
+GL/gl.h
+-
 QtGui/qopenglext.h
 -
 stddef.h
@@ -2617,17 +2767,13 @@ inttypes.h
 -
 inttypes.h
 -
-inttypes.h
--
-stdint.h
--
 stdint.h
 -
 inttypes.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglbuffer.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qscopedpointer.h
 -
@@ -2635,7 +2781,7 @@ QtGui/qopengl.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qnamespace.h
 -
@@ -2651,13 +2797,15 @@ QtGui/qopenglversionfunctions.h
 -
 QtCore/qhash.h
 -
+QtCore/qhashfunctions.h
+-
 QtCore/qpair.h
 -
 QtCore/qvariant.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengldebug.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qshareddata.h
 -
@@ -2685,17 +2833,19 @@ inttypes.h
 -
 inttypes.h
 -
-inttypes.h
--
-stdint.h
--
 stdint.h
 -
 inttypes.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglextrafunctions.h
+QtGui/qtguiglobal.h
+-
+QtGui/qopenglfunctions.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtGui/qopengl.h
 -
@@ -2705,7 +2855,7 @@ QtCore/qscopedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtGui/qopengl.h
 -
@@ -2715,7 +2865,7 @@ stdio.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpaintdevice.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtGui/qpaintdevice.h
 -
@@ -2725,13 +2875,13 @@ QtGui/qopenglcontext.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpixeltransferoptions.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/QSharedDataPointer
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglshaderprogram.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtGui/qopengl.h
 -
@@ -2745,7 +2895,7 @@ QtGui/qmatrix4x4.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltexture.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtGui/qopengl.h
 -
@@ -2754,8 +2904,18 @@ QtGui/qimage.h
 QtCore/QScopedPointer
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltextureblitter.h
+QtGui/qtguiglobal.h
+-
+QtGui/qopengl.h
+-
+QtGui/QMatrix3x3
+-
+QtGui/QMatrix4x4
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltimerquery.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/QObject
 -
@@ -2763,9 +2923,11 @@ QtGui/qopengl.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qhash.h
+-
+QtCore/qhashfunctions.h
 -
 QtCore/qpair.h
 -
@@ -2773,7 +2935,7 @@ QtGui/qopengl.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglvertexarrayobject.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/QObject
 -
@@ -2781,7 +2943,7 @@ QtGui/qopengl.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtGui/QPaintDeviceWindow
 -
@@ -2791,12 +2953,16 @@ QtGui/QImage
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h
+QtGui/qtguiglobal.h
+-
 QtGui/qpaintdevice.h
 -
 QtGui/qpagelayout.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagelayout.h
+QtGui/qtguiglobal.h
+-
 QtCore/qsharedpointer.h
 -
 QtCore/qstring.h
@@ -2807,22 +2973,30 @@ QtGui/qpagesize.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagesize.h
+QtGui/qtguiglobal.h
+-
 QtCore/qsharedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+QtGui/qtguiglobal.h
+-
 QtGui/qwindowdefs.h
 -
 QtCore/qrect.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h
+QtGui/qtguiglobal.h
+-
 QtGui/QWindow
 -
 QtGui/QPaintDevice
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h
+QtGui/qtguiglobal.h
+-
 QtCore/qnamespace.h
 -
 QtCore/qobjectdefs.h
@@ -2833,6 +3007,8 @@ QtGui/qpainter.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
+QtGui/qtguiglobal.h
+-
 QtCore/qnamespace.h
 -
 QtCore/qrect.h
@@ -2863,6 +3039,8 @@ QtGui/qfontmetrics.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
+QtGui/qtguiglobal.h
+-
 QtGui/qmatrix.h
 -
 QtCore/qglobal.h
@@ -2877,6 +3055,8 @@ QtCore/qscopedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
+QtGui/qtguiglobal.h
+-
 QtGui/qwindowdefs.h
 -
 QtGui/qcolor.h
@@ -2885,7 +3065,7 @@ QtGui/qbrush.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpdfwriter.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qobject.h
 -
@@ -2895,12 +3075,16 @@ QtGui/qpagelayout.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
+QtGui/qtguiglobal.h
+-
 QtGui/qcolor.h
 -
 QtGui/qbrush.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpicture.h
+QtGui/qtguiglobal.h
+-
 QtCore/qiodevice.h
 -
 QtCore/qstringlist.h
@@ -2911,16 +3095,20 @@ QtGui/qpaintdevice.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpictureformatplugin.h
+QtGui/qtguiglobal.h
+-
 QtCore/qplugin.h
 -
 QtCore/qfactoryinterface.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
+QtGui/qtguiglobal.h
+-
 QtGui/qpaintdevice.h
 -
 QtGui/qcolor.h
@@ -2937,12 +3125,14 @@ QtGui/qtransform.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmapcache.h
-QtGui/qpixmap.h
+QtGui/qtguiglobal.h
 -
-QtCore/qpair.h
+QtGui/qpixmap.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
+QtGui/qtguiglobal.h
+-
 QtCore/qvector.h
 -
 QtCore/qpoint.h
@@ -2951,6 +3141,8 @@ QtCore/qrect.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h
+QtGui/qtguiglobal.h
+-
 QtGui/qgenericmatrix.h
 -
 QtGui/qvector3d.h
@@ -2959,10 +3151,14 @@ QtGui/qvector4d.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qrasterwindow.h
+QtGui/qtguiglobal.h
+-
 QtGui/QPaintDeviceWindow
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h
+QtGui/qtguiglobal.h
+-
 QtCore/qstring.h
 -
 QtCore/qiodevice.h
@@ -2981,6 +3177,8 @@ QtGui/qfontdatabase.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
+QtGui/qtguiglobal.h
+-
 QtCore/qatomic.h
 -
 QtCore/qrect.h
@@ -2991,12 +3189,20 @@ QtCore/qdatastream.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
+-
+QtCore/qprocessordetection.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h
+QtGui/qtguiglobal.h
 -
 QtCore/qprocessordetection.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qscreen.h
+QtGui/qtguiglobal.h
+-
 QtCore/QList
 -
 QtCore/QObject
@@ -3013,6 +3219,8 @@ QtCore/qnamespace.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qsessionmanager.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 QtGui/qwindowdefs.h
@@ -3023,6 +3231,8 @@ QtCore/qstringlist.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qstandarditemmodel.h
+QtGui/qtguiglobal.h
+-
 QtCore/qabstractitemmodel.h
 -
 QtGui/qbrush.h
@@ -3035,6 +3245,8 @@ QtCore/qdatastream.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qstatictext.h
+QtGui/qtguiglobal.h
+-
 QtCore/qsize.h
 -
 QtCore/qstring.h
@@ -3049,10 +3261,14 @@ QtGui/qtextoption.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qstylehints.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h
+QtGui/qtguiglobal.h
+-
 QtCore/qnamespace.h
 -
 QtGui/qsurfaceformat.h
@@ -3063,13 +3279,15 @@ QtCore/qsize.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qpair.h
 -
+QtCore/qobjectdefs.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qobject.h
 -
@@ -3077,6 +3295,8 @@ QtGui/qtextobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h
+QtGui/qtguiglobal.h
+-
 QtCore/qstring.h
 -
 QtCore/qshareddata.h
@@ -3085,6 +3305,8 @@ QtGui/qtextformat.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 QtCore/qsize.h
@@ -3099,14 +3321,20 @@ QtCore/qurl.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocumentfragment.h
+QtGui/qtguiglobal.h
+-
 QtCore/qstring.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocumentwriter.h
+QtGui/qtguiglobal.h
+-
 QtCore/qstring.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h
+QtGui/qtguiglobal.h
+-
 QtGui/qcolor.h
 -
 QtGui/qfont.h
@@ -3125,6 +3353,8 @@ QtGui/qtextoption.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlayout.h
+QtGui/qtguiglobal.h
+-
 QtCore/qstring.h
 -
 QtCore/qnamespace.h
@@ -3147,12 +3377,16 @@ QtGui/qtextcursor.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlist.h
+QtGui/qtguiglobal.h
+-
 QtGui/qtextobject.h
 -
 QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextobject.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 QtGui/qtextformat.h
@@ -3163,6 +3397,8 @@ QtGui/qglyphrun.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
+QtGui/qtguiglobal.h
+-
 QtCore/qnamespace.h
 -
 QtCore/qchar.h
@@ -3171,20 +3407,32 @@ QtCore/qmetatype.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtexttable.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qobject.h
 -
 QtGui/qtextobject.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h
+QtCore/qglobal.h
+-
+QtGui/qtgui-config.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
+QtGui/qtguiglobal.h
+-
 QtGui/qmatrix.h
 -
 QtGui/qpainterpath.h
@@ -3203,6 +3451,8 @@ QtCore/qrect.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h
+QtGui/qtguiglobal.h
+-
 QtCore/qobject.h
 -
 QtCore/qstring.h
@@ -3215,24 +3465,32 @@ QtCore/qlocale.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
+QtGui/qtguiglobal.h
+-
 QtCore/qpoint.h
 -
 QtCore/qmetatype.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h
+QtGui/qtguiglobal.h
+-
 QtCore/qpoint.h
 -
 QtCore/qmetatype.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
+QtGui/qtguiglobal.h
+-
 QtCore/qpoint.h
 -
 QtCore/qmetatype.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h
+QtGui/qtguiglobal.h
+-
 QtCore/QObject
 -
 QtCore/QEvent
@@ -3255,7 +3513,7 @@ QtGui/qcursor.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 QtCore/qobjectdefs.h
 -
@@ -3265,7 +3523,7 @@ QtGui/qwindowdefs_win.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
-QtCore/qglobal.h
+QtGui/qtguiglobal.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction
@@ -3279,6 +3537,10 @@ qapplication.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup
 qbuttongroup.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qbuttongroup.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox
+qcheckbox.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView
 qheaderview.h
@@ -3313,6 +3575,8 @@ qwidget.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtGui/qicon.h
 -
 QtGui/qkeysequence.h
@@ -3321,12 +3585,16 @@ QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtCore/qobject.h
 -
 QtWidgets/qstyleoption.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qabstractscrollarea.h
 -
 QtCore/qabstractitemmodel.h
@@ -3337,20 +3605,28 @@ QtWidgets/qabstractitemdelegate.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qframe.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 QtGui/qvalidator.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtGui/qkeysequence.h
 -
 QtCore/qstring.h
@@ -3365,10 +3641,14 @@ QtWidgets/qactiongroup.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qaction.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtCore/qcoreapplication.h
 -
 QtGui/qwindowdefs.h
@@ -3385,32 +3665,52 @@ QtGui/qguiapplication.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qbuttongroup.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtCore/qobject.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractbutton.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qheaderview.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qabstractitemview.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qframe.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 QtWidgets/qtabwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 QtCore/qstring.h
@@ -3419,34 +3719,48 @@ QtGui/qicon.h
 -
 QtWidgets/qaction.h
 -
-windef.h
--
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qmenu.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qabstractbutton.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtCore/qobject.h
+-
+QtCore/qalgorithms.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qabstractslider.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtCore/qobject.h
 -
 QtCore/qrect.h
@@ -3463,6 +3777,10 @@ QtWidgets/qsizepolicy.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qlocale.h
+-
 QtCore/qvariant.h
 -
 QtWidgets/qabstractspinbox.h
@@ -3487,20 +3805,38 @@ QtCore/qabstractitemmodel.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtWidgets/qwidget.h
 -
 QtGui/qicon.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtoolbar.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qaction.h
+-
 QtWidgets/qwidget.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h
+QtGui/qtguiglobal.h
+-
+QtWidgets/qtwidgets-config.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
 QtGui/qwindowdefs.h
 -
 QtCore/qobject.h
@@ -3530,97 +3866,111 @@ QtGui/qkeysequence.h
 QtGui/qevent.h
 -
 
-/usr/local/include/opencv4/opencv2/calib3d.hpp
+/usr/local/include/opencv/cxcore.h
+opencv2/core/core_c.h
+/usr/local/include/opencv/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/calib3d.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/features2d.hpp
-/usr/local/include/opencv4/opencv2/opencv2/features2d.hpp
+/usr/local/include/opencv2/opencv2/features2d.hpp
 opencv2/core/affine.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/affine.hpp
+/usr/local/include/opencv2/opencv2/core/affine.hpp
+opencv2/calib3d/calib3d_c.h
+/usr/local/include/opencv2/opencv2/calib3d/calib3d_c.h
 
-/usr/local/include/opencv4/opencv2/core.hpp
+/usr/local/include/opencv2/calib3d/calib3d_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/calib3d/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/core.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/opencv2/core/cvdef.h
+/usr/local/include/opencv2/opencv2/core/cvdef.h
 opencv2/core/version.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/version.hpp
+/usr/local/include/opencv2/opencv2/core/version.hpp
 opencv2/core/base.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/base.hpp
+/usr/local/include/opencv2/opencv2/core/base.hpp
 opencv2/core/cvstd.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/cvstd.hpp
+/usr/local/include/opencv2/opencv2/core/cvstd.hpp
 opencv2/core/traits.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/traits.hpp
+/usr/local/include/opencv2/opencv2/core/traits.hpp
 opencv2/core/matx.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/matx.hpp
+/usr/local/include/opencv2/opencv2/core/matx.hpp
 opencv2/core/types.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/types.hpp
+/usr/local/include/opencv2/opencv2/core/types.hpp
 opencv2/core/mat.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/mat.hpp
+/usr/local/include/opencv2/opencv2/core/mat.hpp
 opencv2/core/persistence.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/persistence.hpp
+/usr/local/include/opencv2/opencv2/core/persistence.hpp
+opencv2/opencv.hpp
+/usr/local/include/opencv2/opencv2/opencv.hpp
+opencv2/xfeatures2d.hpp
+/usr/local/include/opencv2/opencv2/xfeatures2d.hpp
 opencv2/core/operations.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/operations.hpp
+/usr/local/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/cvstd.inl.hpp
+/usr/local/include/opencv2/opencv2/core/cvstd.inl.hpp
 opencv2/core/utility.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/utility.hpp
+/usr/local/include/opencv2/opencv2/core/utility.hpp
 opencv2/core/optim.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/optim.hpp
+/usr/local/include/opencv2/opencv2/core/optim.hpp
 opencv2/core/ovx.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/ovx.hpp
+/usr/local/include/opencv2/opencv2/core/ovx.hpp
 
-/usr/local/include/opencv4/opencv2/core/affine.hpp
+/usr/local/include/opencv2/core/affine.hpp
 opencv2/core.hpp
 -
 
-/usr/local/include/opencv4/opencv2/core/base.hpp
+/usr/local/include/opencv2/core/base.hpp
 opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/core/opencv2/opencv_modules.hpp
 climits
 -
 algorithm
 -
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 opencv2/core/cvstd.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvstd.hpp
+/usr/local/include/opencv2/core/opencv2/core/cvstd.hpp
 opencv2/core/neon_utils.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/neon_utils.hpp
-opencv2/core/vsx_utils.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/vsx_utils.hpp
-opencv2/core/check.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/check.hpp
+/usr/local/include/opencv2/core/opencv2/core/neon_utils.hpp
 
-/usr/local/include/opencv4/opencv2/core/bufferpool.hpp
+/usr/local/include/opencv2/core/bufferpool.hpp
 
-/usr/local/include/opencv4/opencv2/core/check.hpp
-opencv2/core/base.hpp
--
-
-/usr/local/include/opencv4/opencv2/core/core.hpp
+/usr/local/include/opencv2/core/core.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
+/usr/local/include/opencv2/core/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/core/cuda.hpp
+/usr/local/include/opencv2/core/core_c.h
+opencv2/core/types_c.h
+/usr/local/include/opencv2/core/opencv2/core/types_c.h
+cxcore.h
+/usr/local/include/opencv2/core/cxcore.h
+cxcore.h
+/usr/local/include/opencv2/core/cxcore.h
+opencv2/core/utility.hpp
+/usr/local/include/opencv2/core/opencv2/core/utility.hpp
+
+/usr/local/include/opencv2/core/cuda.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
+/usr/local/include/opencv2/core/opencv2/core.hpp
 opencv2/core/cuda_types.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cuda_types.hpp
-opencv2/opencv.hpp
--
+/usr/local/include/opencv2/core/opencv2/core/cuda_types.hpp
 opencv2/core/cuda.inl.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cuda.inl.hpp
+/usr/local/include/opencv2/core/opencv2/core/cuda.inl.hpp
 
-/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp
+/usr/local/include/opencv2/core/cuda.inl.hpp
 opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cuda.hpp
+/usr/local/include/opencv2/core/opencv2/core/cuda.hpp
 
-/usr/local/include/opencv4/opencv2/core/cuda_types.hpp
+/usr/local/include/opencv2/core/cuda_types.hpp
 
-/usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
-cv_cpu_config.h
-/usr/local/include/opencv4/opencv2/core/cv_cpu_config.h
-cv_cpu_helper.h
-/usr/local/include/opencv4/opencv2/core/cv_cpu_helper.h
+/usr/local/include/opencv2/core/cvdef.h
+limits.h
+-
+opencv2/core/hal/interface.h
+/usr/local/include/opencv2/core/opencv2/core/hal/interface.h
 emmintrin.h
 -
 pmmintrin.h
@@ -3637,14 +3987,6 @@ popcntintrin.h
 -
 immintrin.h
 -
-arm_neon.h
--
-immintrin.h
--
-immintrin.h
--
-immintrin.h
--
 immintrin.h
 -
 Intrin.h
@@ -3653,48 +3995,12 @@ arm_neon.h
 -
 arm_neon.h
 -
-arm_neon.h
--
-altivec.h
--
-emmintrin.h
--
-Intrin.h
--
-arm_neon.h
--
-arm_neon.h
--
-altivec.h
--
-
-/usr/local/include/opencv4/opencv2/core/cv_cpu_helper.h
-
-/usr/local/include/opencv4/opencv2/core/cvdef.h
-cvconfig.h
-/usr/local/include/opencv4/opencv2/core/cvconfig.h
-limits.h
--
-opencv2/core/hal/interface.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/hal/interface.h
-cv_cpu_dispatch.h
-/usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
 intrin.h
 -
-array
--
-cstdint
--
-stdint.h
--
-stdint.h
--
-opencv2/core/fast_math.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/fast_math.hpp
 
-/usr/local/include/opencv4/opencv2/core/cvstd.hpp
+/usr/local/include/opencv2/core/cvstd.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 cstddef
 -
 cstring
@@ -3711,38 +4017,28 @@ cstdlib
 -
 cmath
 -
-cvstd_wrapper.hpp
-/usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
+opencv2/core/ptr.inl.hpp
+/usr/local/include/opencv2/core/opencv2/core/ptr.inl.hpp
 
-/usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp
+/usr/local/include/opencv2/core/cvstd.inl.hpp
 complex
 -
 ostream
 -
 
-/usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
+/usr/local/include/opencv2/core/fast_math.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
-string
--
-memory
--
-type_traits
--
-
-/usr/local/include/opencv4/opencv2/core/fast_math.hpp
-opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
-emmintrin.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
+fastmath.h
 -
 cmath
 -
-fastmath.h
--
 math.h
 -
+tegra_round.hpp
+/usr/local/include/opencv2/core/tegra_round.hpp
 
-/usr/local/include/opencv4/opencv2/core/hal/interface.h
+/usr/local/include/opencv2/core/hal/interface.h
 cstddef
 -
 stddef.h
@@ -3754,69 +4050,69 @@ cstdint
 stdint.h
 -
 
-/usr/local/include/opencv4/opencv2/core/mat.hpp
+/usr/local/include/opencv2/core/mat.hpp
 opencv2/core/matx.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/matx.hpp
+/usr/local/include/opencv2/core/opencv2/core/matx.hpp
 opencv2/core/types.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/types.hpp
+/usr/local/include/opencv2/core/opencv2/core/types.hpp
 opencv2/core/bufferpool.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/bufferpool.hpp
-type_traits
--
+/usr/local/include/opencv2/core/opencv2/core/bufferpool.hpp
 opencv2/core/mat.inl.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/mat.inl.hpp
+/usr/local/include/opencv2/core/opencv2/core/mat.inl.hpp
 
-/usr/local/include/opencv4/opencv2/core/mat.inl.hpp
+/usr/local/include/opencv2/core/mat.inl.hpp
 
-/usr/local/include/opencv4/opencv2/core/matx.hpp
+/usr/local/include/opencv2/core/matx.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 opencv2/core/base.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/base.hpp
+/usr/local/include/opencv2/core/opencv2/core/base.hpp
 opencv2/core/traits.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/traits.hpp
+/usr/local/include/opencv2/core/opencv2/core/traits.hpp
 opencv2/core/saturate.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/saturate.hpp
-initializer_list
--
+/usr/local/include/opencv2/core/opencv2/core/saturate.hpp
 
-/usr/local/include/opencv4/opencv2/core/neon_utils.hpp
+/usr/local/include/opencv2/core/neon_utils.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 
-/usr/local/include/opencv4/opencv2/core/operations.hpp
+/usr/local/include/opencv2/core/operations.hpp
 cstdio
 -
 
-/usr/local/include/opencv4/opencv2/core/optim.hpp
+/usr/local/include/opencv2/core/optim.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
+/usr/local/include/opencv2/core/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/core/ovx.hpp
+/usr/local/include/opencv2/core/ovx.hpp
 cvdef.h
-/usr/local/include/opencv4/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/cvdef.h
 
-/usr/local/include/opencv4/opencv2/core/persistence.hpp
+/usr/local/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/types.hpp
+/usr/local/include/opencv2/core/opencv2/core/types.hpp
 opencv2/core/mat.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/mat.hpp
+/usr/local/include/opencv2/core/opencv2/core/mat.hpp
 opencv2/opencv.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/opencv.hpp
+/usr/local/include/opencv2/core/opencv2/opencv.hpp
 time.h
 -
 
-/usr/local/include/opencv4/opencv2/core/saturate.hpp
+/usr/local/include/opencv2/core/ptr.inl.hpp
+algorithm
+-
+
+/usr/local/include/opencv2/core/saturate.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 opencv2/core/fast_math.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/fast_math.hpp
+/usr/local/include/opencv2/core/opencv2/core/fast_math.hpp
 
-/usr/local/include/opencv4/opencv2/core/traits.hpp
+/usr/local/include/opencv2/core/traits.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 
-/usr/local/include/opencv4/opencv2/core/types.hpp
+/usr/local/include/opencv2/core/types.hpp
 climits
 -
 cfloat
@@ -3826,115 +4122,83 @@ vector
 limits
 -
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 opencv2/core/cvstd.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvstd.hpp
+/usr/local/include/opencv2/core/opencv2/core/cvstd.hpp
 opencv2/core/matx.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core/matx.hpp
+/usr/local/include/opencv2/core/opencv2/core/matx.hpp
 
-/usr/local/include/opencv4/opencv2/core/utility.hpp
-opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
-ostream
+/usr/local/include/opencv2/core/types_c.h
+ipl.h
 -
-functional
+ipl/ipl.h
 -
-mutex
--
-
-/usr/local/include/opencv4/opencv2/core/version.hpp
-
-/usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
 opencv2/core/cvdef.h
-/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+/usr/local/include/opencv2/core/opencv2/core/cvdef.h
 assert.h
 -
-
-/usr/local/include/opencv4/opencv2/dnn.hpp
-opencv2/dnn/dnn.hpp
+stdlib.h
 -
-
-/usr/local/include/opencv4/opencv2/dnn/dict.hpp
-opencv2/core.hpp
+string.h
 -
-map
--
-ostream
--
-opencv2/dnn/dnn.hpp
--
-
-/usr/local/include/opencv4/opencv2/dnn/dnn.hpp
-vector
+float.h
 -
 opencv2/core.hpp
--
-../dnn/version.hpp
-/usr/local/include/opencv4/opencv2/dnn/version.hpp
-opencv2/dnn/dict.hpp
--
-opencv2/dnn/layer.hpp
--
-opencv2/dnn/dnn.inl.hpp
--
+/usr/local/include/opencv2/core/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp
-opencv2/dnn.hpp
--
-
-/usr/local/include/opencv4/opencv2/dnn/layer.hpp
-opencv2/dnn.hpp
--
-
-/usr/local/include/opencv4/opencv2/dnn/version.hpp
-
-/usr/local/include/opencv4/opencv2/features2d.hpp
-opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/core/utility.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/core/opencv2/core.hpp
+opencv2/core/core_c.h
+/usr/local/include/opencv2/core/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/core/version.hpp
+
+/usr/local/include/opencv2/features2d.hpp
+opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/flann/miniflann.hpp
-/usr/local/include/opencv4/opencv2/opencv2/flann/miniflann.hpp
+/usr/local/include/opencv2/opencv2/flann/miniflann.hpp
 
-/usr/local/include/opencv4/opencv2/flann.hpp
+/usr/local/include/opencv2/flann.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/flann/miniflann.hpp
-/usr/local/include/opencv4/opencv2/opencv2/flann/miniflann.hpp
+/usr/local/include/opencv2/opencv2/flann/miniflann.hpp
 opencv2/flann/flann_base.hpp
-/usr/local/include/opencv4/opencv2/opencv2/flann/flann_base.hpp
+/usr/local/include/opencv2/opencv2/flann/flann_base.hpp
 
-/usr/local/include/opencv4/opencv2/flann/all_indices.h
+/usr/local/include/opencv2/flann/all_indices.h
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 kdtree_index.h
-/usr/local/include/opencv4/opencv2/flann/kdtree_index.h
+/usr/local/include/opencv2/flann/kdtree_index.h
 kdtree_single_index.h
-/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h
+/usr/local/include/opencv2/flann/kdtree_single_index.h
 kmeans_index.h
-/usr/local/include/opencv4/opencv2/flann/kmeans_index.h
+/usr/local/include/opencv2/flann/kmeans_index.h
 composite_index.h
-/usr/local/include/opencv4/opencv2/flann/composite_index.h
+/usr/local/include/opencv2/flann/composite_index.h
 linear_index.h
-/usr/local/include/opencv4/opencv2/flann/linear_index.h
+/usr/local/include/opencv2/flann/linear_index.h
 hierarchical_clustering_index.h
-/usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
+/usr/local/include/opencv2/flann/hierarchical_clustering_index.h
 lsh_index.h
-/usr/local/include/opencv4/opencv2/flann/lsh_index.h
+/usr/local/include/opencv2/flann/lsh_index.h
 autotuned_index.h
-/usr/local/include/opencv4/opencv2/flann/autotuned_index.h
+/usr/local/include/opencv2/flann/autotuned_index.h
 
-/usr/local/include/opencv4/opencv2/flann/allocator.h
+/usr/local/include/opencv2/flann/allocator.h
 stdlib.h
 -
 stdio.h
 -
 
-/usr/local/include/opencv4/opencv2/flann/any.h
+/usr/local/include/opencv2/flann/any.h
 defines.h
-/usr/local/include/opencv4/opencv2/flann/defines.h
+/usr/local/include/opencv2/flann/defines.h
 stdexcept
 -
 ostream
@@ -3942,49 +4206,47 @@ ostream
 typeinfo
 -
 
-/usr/local/include/opencv4/opencv2/flann/autotuned_index.h
-sstream
--
+/usr/local/include/opencv2/flann/autotuned_index.h
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 ground_truth.h
-/usr/local/include/opencv4/opencv2/flann/ground_truth.h
+/usr/local/include/opencv2/flann/ground_truth.h
 index_testing.h
-/usr/local/include/opencv4/opencv2/flann/index_testing.h
+/usr/local/include/opencv2/flann/index_testing.h
 sampling.h
-/usr/local/include/opencv4/opencv2/flann/sampling.h
+/usr/local/include/opencv2/flann/sampling.h
 kdtree_index.h
-/usr/local/include/opencv4/opencv2/flann/kdtree_index.h
+/usr/local/include/opencv2/flann/kdtree_index.h
 kdtree_single_index.h
-/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h
+/usr/local/include/opencv2/flann/kdtree_single_index.h
 kmeans_index.h
-/usr/local/include/opencv4/opencv2/flann/kmeans_index.h
+/usr/local/include/opencv2/flann/kmeans_index.h
 composite_index.h
-/usr/local/include/opencv4/opencv2/flann/composite_index.h
+/usr/local/include/opencv2/flann/composite_index.h
 linear_index.h
-/usr/local/include/opencv4/opencv2/flann/linear_index.h
+/usr/local/include/opencv2/flann/linear_index.h
 logger.h
-/usr/local/include/opencv4/opencv2/flann/logger.h
+/usr/local/include/opencv2/flann/logger.h
 
-/usr/local/include/opencv4/opencv2/flann/composite_index.h
+/usr/local/include/opencv2/flann/composite_index.h
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 kdtree_index.h
-/usr/local/include/opencv4/opencv2/flann/kdtree_index.h
+/usr/local/include/opencv2/flann/kdtree_index.h
 kmeans_index.h
-/usr/local/include/opencv4/opencv2/flann/kmeans_index.h
+/usr/local/include/opencv2/flann/kmeans_index.h
 
-/usr/local/include/opencv4/opencv2/flann/config.h
+/usr/local/include/opencv2/flann/config.h
 
-/usr/local/include/opencv4/opencv2/flann/defines.h
+/usr/local/include/opencv2/flann/defines.h
 config.h
-/usr/local/include/opencv4/opencv2/flann/config.h
+/usr/local/include/opencv2/flann/config.h
 
-/usr/local/include/opencv4/opencv2/flann/dist.h
+/usr/local/include/opencv2/flann/dist.h
 cmath
 -
 cstdlib
@@ -3994,21 +4256,21 @@ string.h
 stdint.h
 -
 defines.h
-/usr/local/include/opencv4/opencv2/flann/defines.h
+/usr/local/include/opencv2/flann/defines.h
 Intrin.h
 -
 arm_neon.h
-/usr/local/include/opencv4/opencv2/flann/arm_neon.h
+/usr/local/include/opencv2/flann/arm_neon.h
 
-/usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h
+/usr/local/include/opencv2/flann/dynamic_bitset.h
 boost/dynamic_bitset.hpp
 -
 limits.h
 -
 dist.h
-/usr/local/include/opencv4/opencv2/flann/dist.h
+/usr/local/include/opencv2/flann/dist.h
 
-/usr/local/include/opencv4/opencv2/flann/flann_base.hpp
+/usr/local/include/opencv2/flann/flann_base.hpp
 vector
 -
 cassert
@@ -4016,33 +4278,33 @@ cassert
 cstdio
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 params.h
-/usr/local/include/opencv4/opencv2/flann/params.h
+/usr/local/include/opencv2/flann/params.h
 saving.h
-/usr/local/include/opencv4/opencv2/flann/saving.h
+/usr/local/include/opencv2/flann/saving.h
 all_indices.h
-/usr/local/include/opencv4/opencv2/flann/all_indices.h
+/usr/local/include/opencv2/flann/all_indices.h
 
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/flann/opencv2/core.hpp
+/usr/local/include/opencv2/flann/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/flann/ground_truth.h
+/usr/local/include/opencv2/flann/ground_truth.h
 dist.h
-/usr/local/include/opencv4/opencv2/flann/dist.h
+/usr/local/include/opencv2/flann/dist.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 
-/usr/local/include/opencv4/opencv2/flann/heap.h
+/usr/local/include/opencv2/flann/heap.h
 algorithm
 -
 vector
 -
 
-/usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
+/usr/local/include/opencv2/flann/hierarchical_clustering_index.h
 algorithm
 -
 map
@@ -4054,25 +4316,25 @@ limits
 cmath
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 dist.h
-/usr/local/include/opencv4/opencv2/flann/dist.h
+/usr/local/include/opencv2/flann/dist.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 result_set.h
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 heap.h
-/usr/local/include/opencv4/opencv2/flann/heap.h
+/usr/local/include/opencv2/flann/heap.h
 allocator.h
-/usr/local/include/opencv4/opencv2/flann/allocator.h
+/usr/local/include/opencv2/flann/allocator.h
 random.h
-/usr/local/include/opencv4/opencv2/flann/random.h
+/usr/local/include/opencv2/flann/random.h
 saving.h
-/usr/local/include/opencv4/opencv2/flann/saving.h
+/usr/local/include/opencv2/flann/saving.h
 
-/usr/local/include/opencv4/opencv2/flann/index_testing.h
+/usr/local/include/opencv2/flann/index_testing.h
 cstring
 -
 cassert
@@ -4080,17 +4342,17 @@ cassert
 cmath
 -
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 result_set.h
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 logger.h
-/usr/local/include/opencv4/opencv2/flann/logger.h
+/usr/local/include/opencv2/flann/logger.h
 timer.h
-/usr/local/include/opencv4/opencv2/flann/timer.h
+/usr/local/include/opencv2/flann/timer.h
 
-/usr/local/include/opencv4/opencv2/flann/kdtree_index.h
+/usr/local/include/opencv2/flann/kdtree_index.h
 algorithm
 -
 map
@@ -4100,25 +4362,25 @@ cassert
 cstring
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 dynamic_bitset.h
-/usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h
+/usr/local/include/opencv2/flann/dynamic_bitset.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 result_set.h
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 heap.h
-/usr/local/include/opencv4/opencv2/flann/heap.h
+/usr/local/include/opencv2/flann/heap.h
 allocator.h
-/usr/local/include/opencv4/opencv2/flann/allocator.h
+/usr/local/include/opencv2/flann/allocator.h
 random.h
-/usr/local/include/opencv4/opencv2/flann/random.h
+/usr/local/include/opencv2/flann/random.h
 saving.h
-/usr/local/include/opencv4/opencv2/flann/saving.h
+/usr/local/include/opencv2/flann/saving.h
 
-/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h
+/usr/local/include/opencv2/flann/kdtree_single_index.h
 algorithm
 -
 map
@@ -4128,23 +4390,23 @@ cassert
 cstring
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 result_set.h
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 heap.h
-/usr/local/include/opencv4/opencv2/flann/heap.h
+/usr/local/include/opencv2/flann/heap.h
 allocator.h
-/usr/local/include/opencv4/opencv2/flann/allocator.h
+/usr/local/include/opencv2/flann/allocator.h
 random.h
-/usr/local/include/opencv4/opencv2/flann/random.h
+/usr/local/include/opencv2/flann/random.h
 saving.h
-/usr/local/include/opencv4/opencv2/flann/saving.h
+/usr/local/include/opencv2/flann/saving.h
 
-/usr/local/include/opencv4/opencv2/flann/kmeans_index.h
+/usr/local/include/opencv2/flann/kmeans_index.h
 algorithm
 -
 map
@@ -4156,41 +4418,41 @@ limits
 cmath
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 dist.h
-/usr/local/include/opencv4/opencv2/flann/dist.h
+/usr/local/include/opencv2/flann/dist.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 result_set.h
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 heap.h
-/usr/local/include/opencv4/opencv2/flann/heap.h
+/usr/local/include/opencv2/flann/heap.h
 allocator.h
-/usr/local/include/opencv4/opencv2/flann/allocator.h
+/usr/local/include/opencv2/flann/allocator.h
 random.h
-/usr/local/include/opencv4/opencv2/flann/random.h
+/usr/local/include/opencv2/flann/random.h
 saving.h
-/usr/local/include/opencv4/opencv2/flann/saving.h
+/usr/local/include/opencv2/flann/saving.h
 logger.h
-/usr/local/include/opencv4/opencv2/flann/logger.h
+/usr/local/include/opencv2/flann/logger.h
 
-/usr/local/include/opencv4/opencv2/flann/linear_index.h
+/usr/local/include/opencv2/flann/linear_index.h
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 
-/usr/local/include/opencv4/opencv2/flann/logger.h
+/usr/local/include/opencv2/flann/logger.h
 stdio.h
 -
 stdarg.h
 -
 defines.h
-/usr/local/include/opencv4/opencv2/flann/defines.h
+/usr/local/include/opencv2/flann/defines.h
 
-/usr/local/include/opencv4/opencv2/flann/lsh_index.h
+/usr/local/include/opencv2/flann/lsh_index.h
 algorithm
 -
 cassert
@@ -4202,25 +4464,25 @@ map
 vector
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 result_set.h
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 heap.h
-/usr/local/include/opencv4/opencv2/flann/heap.h
+/usr/local/include/opencv2/flann/heap.h
 lsh_table.h
-/usr/local/include/opencv4/opencv2/flann/lsh_table.h
+/usr/local/include/opencv2/flann/lsh_table.h
 allocator.h
-/usr/local/include/opencv4/opencv2/flann/allocator.h
+/usr/local/include/opencv2/flann/allocator.h
 random.h
-/usr/local/include/opencv4/opencv2/flann/random.h
+/usr/local/include/opencv2/flann/random.h
 saving.h
-/usr/local/include/opencv4/opencv2/flann/saving.h
+/usr/local/include/opencv2/flann/saving.h
 
-/usr/local/include/opencv4/opencv2/flann/lsh_table.h
+/usr/local/include/opencv2/flann/lsh_table.h
 algorithm
 -
 iostream
@@ -4238,43 +4500,43 @@ math.h
 stddef.h
 -
 dynamic_bitset.h
-/usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h
+/usr/local/include/opencv2/flann/dynamic_bitset.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 stdio.h
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 
-/usr/local/include/opencv4/opencv2/flann/miniflann.hpp
+/usr/local/include/opencv2/flann/miniflann.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/flann/opencv2/core.hpp
+/usr/local/include/opencv2/flann/opencv2/core.hpp
 opencv2/flann/defines.h
-/usr/local/include/opencv4/opencv2/flann/opencv2/flann/defines.h
+/usr/local/include/opencv2/flann/opencv2/flann/defines.h
 
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 result_set.h
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 params.h
-/usr/local/include/opencv4/opencv2/flann/params.h
+/usr/local/include/opencv2/flann/params.h
 
-/usr/local/include/opencv4/opencv2/flann/params.h
+/usr/local/include/opencv2/flann/params.h
 any.h
-/usr/local/include/opencv4/opencv2/flann/any.h
+/usr/local/include/opencv2/flann/any.h
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 iostream
 -
 map
 -
 
-/usr/local/include/opencv4/opencv2/flann/random.h
+/usr/local/include/opencv2/flann/random.h
 algorithm
 -
 cstdlib
@@ -4282,9 +4544,9 @@ cstdlib
 vector
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 
-/usr/local/include/opencv4/opencv2/flann/result_set.h
+/usr/local/include/opencv2/flann/result_set.h
 algorithm
 -
 cstring
@@ -4298,323 +4560,395 @@ set
 vector
 -
 
-/usr/local/include/opencv4/opencv2/flann/sampling.h
+/usr/local/include/opencv2/flann/sampling.h
 matrix.h
-/usr/local/include/opencv4/opencv2/flann/matrix.h
+/usr/local/include/opencv2/flann/matrix.h
 random.h
-/usr/local/include/opencv4/opencv2/flann/random.h
+/usr/local/include/opencv2/flann/random.h
 
-/usr/local/include/opencv4/opencv2/flann/saving.h
+/usr/local/include/opencv2/flann/saving.h
 cstring
 -
 vector
 -
 general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
+/usr/local/include/opencv2/flann/general.h
 nn_index.h
-/usr/local/include/opencv4/opencv2/flann/nn_index.h
+/usr/local/include/opencv2/flann/nn_index.h
 
-/usr/local/include/opencv4/opencv2/flann/timer.h
+/usr/local/include/opencv2/flann/timer.h
 time.h
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/flann/opencv2/core.hpp
+/usr/local/include/opencv2/flann/opencv2/core.hpp
 opencv2/core/utility.hpp
-/usr/local/include/opencv4/opencv2/flann/opencv2/core/utility.hpp
+/usr/local/include/opencv2/flann/opencv2/core/utility.hpp
 
-/usr/local/include/opencv4/opencv2/highgui.hpp
+/usr/local/include/opencv2/highgui.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/imgcodecs.hpp
-/usr/local/include/opencv4/opencv2/opencv2/imgcodecs.hpp
+/usr/local/include/opencv2/opencv2/imgcodecs.hpp
 opencv2/videoio.hpp
-/usr/local/include/opencv4/opencv2/opencv2/videoio.hpp
+/usr/local/include/opencv2/opencv2/videoio.hpp
+opencv2/highgui/highgui_c.h
+/usr/local/include/opencv2/opencv2/highgui/highgui_c.h
 
-/usr/local/include/opencv4/opencv2/highgui/highgui.hpp
+/usr/local/include/opencv2/highgui/highgui.hpp
 opencv2/highgui.hpp
-/usr/local/include/opencv4/opencv2/highgui/opencv2/highgui.hpp
+/usr/local/include/opencv2/highgui/opencv2/highgui.hpp
 
-/usr/local/include/opencv4/opencv2/imgcodecs.hpp
-opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/highgui/highgui_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/highgui/opencv2/core/core_c.h
+opencv2/imgproc/imgproc_c.h
+/usr/local/include/opencv2/highgui/opencv2/imgproc/imgproc_c.h
+opencv2/imgcodecs/imgcodecs_c.h
+/usr/local/include/opencv2/highgui/opencv2/imgcodecs/imgcodecs_c.h
+opencv2/videoio/videoio_c.h
+/usr/local/include/opencv2/highgui/opencv2/videoio/videoio_c.h
 
-/usr/local/include/opencv4/opencv2/imgproc.hpp
+/usr/local/include/opencv2/imgcodecs.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
+opencv2/opencv.hpp
+-
 
-/usr/local/include/opencv4/opencv2/ml.hpp
+/usr/local/include/opencv2/imgcodecs/imgcodecs_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/imgcodecs/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/imgproc.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
+opencv2/core.hpp
+-
+opencv2/imgproc.hpp
+-
+opencv2/imgcodecs.hpp
+-
+opencv2/highgui.hpp
+-
+iostream
+-
+opencv2/imgproc.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/imgproc.hpp
+-
+opencv2/highgui.hpp
+-
+math.h
+-
+opencv2/imgproc.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/imgproc.hpp
+/usr/local/include/opencv2/opencv2/imgproc.hpp
+opencv2/highgui.hpp
+/usr/local/include/opencv2/opencv2/highgui.hpp
+opencv2/imgproc/imgproc_c.h
+/usr/local/include/opencv2/opencv2/imgproc/imgproc_c.h
+
+/usr/local/include/opencv2/imgproc/imgproc_c.h
+opencv2/imgproc/types_c.h
+/usr/local/include/opencv2/imgproc/opencv2/imgproc/types_c.h
+
+/usr/local/include/opencv2/imgproc/types_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/imgproc/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/ml.hpp
+opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 float.h
 -
 map
 -
 iostream
 -
-opencv2/ml/ml.inl.hpp
--
 
-/usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
-
-/usr/local/include/opencv4/opencv2/objdetect.hpp
+/usr/local/include/opencv2/objdetect.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/objdetect/detection_based_tracker.hpp
-/usr/local/include/opencv4/opencv2/opencv2/objdetect/detection_based_tracker.hpp
+/usr/local/include/opencv2/opencv2/objdetect/detection_based_tracker.hpp
+opencv2/objdetect/objdetect_c.h
+/usr/local/include/opencv2/opencv2/objdetect/objdetect_c.h
 
-/usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
-opencv2/core.hpp
+/usr/local/include/opencv2/objdetect/detection_based_tracker.hpp
+vector
+-
+
+/usr/local/include/opencv2/objdetect/objdetect_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/objdetect/opencv2/core/core_c.h
+deque
 -
 vector
 -
 
-/usr/local/include/opencv4/opencv2/opencv.hpp
+/usr/local/include/opencv2/opencv.hpp
 opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/opencv2/opencv_modules.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/calib3d.hpp
-/usr/local/include/opencv4/opencv2/opencv2/calib3d.hpp
+/usr/local/include/opencv2/opencv2/calib3d.hpp
 opencv2/features2d.hpp
-/usr/local/include/opencv4/opencv2/opencv2/features2d.hpp
-opencv2/dnn.hpp
-/usr/local/include/opencv4/opencv2/opencv2/dnn.hpp
+/usr/local/include/opencv2/opencv2/features2d.hpp
 opencv2/flann.hpp
-/usr/local/include/opencv4/opencv2/opencv2/flann.hpp
+/usr/local/include/opencv2/opencv2/flann.hpp
 opencv2/highgui.hpp
-/usr/local/include/opencv4/opencv2/opencv2/highgui.hpp
+/usr/local/include/opencv2/opencv2/highgui.hpp
 opencv2/imgcodecs.hpp
-/usr/local/include/opencv4/opencv2/opencv2/imgcodecs.hpp
+/usr/local/include/opencv2/opencv2/imgcodecs.hpp
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/opencv2/imgproc.hpp
+/usr/local/include/opencv2/opencv2/imgproc.hpp
 opencv2/ml.hpp
-/usr/local/include/opencv4/opencv2/opencv2/ml.hpp
+/usr/local/include/opencv2/opencv2/ml.hpp
 opencv2/objdetect.hpp
-/usr/local/include/opencv4/opencv2/opencv2/objdetect.hpp
+/usr/local/include/opencv2/opencv2/objdetect.hpp
 opencv2/photo.hpp
-/usr/local/include/opencv4/opencv2/opencv2/photo.hpp
+/usr/local/include/opencv2/opencv2/photo.hpp
 opencv2/shape.hpp
-/usr/local/include/opencv4/opencv2/opencv2/shape.hpp
+/usr/local/include/opencv2/opencv2/shape.hpp
 opencv2/stitching.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching.hpp
+/usr/local/include/opencv2/opencv2/stitching.hpp
 opencv2/superres.hpp
-/usr/local/include/opencv4/opencv2/opencv2/superres.hpp
+/usr/local/include/opencv2/opencv2/superres.hpp
 opencv2/video.hpp
-/usr/local/include/opencv4/opencv2/opencv2/video.hpp
+/usr/local/include/opencv2/opencv2/video.hpp
 opencv2/videoio.hpp
-/usr/local/include/opencv4/opencv2/opencv2/videoio.hpp
+/usr/local/include/opencv2/opencv2/videoio.hpp
 opencv2/videostab.hpp
-/usr/local/include/opencv4/opencv2/opencv2/videostab.hpp
+/usr/local/include/opencv2/opencv2/videostab.hpp
 opencv2/viz.hpp
-/usr/local/include/opencv4/opencv2/opencv2/viz.hpp
+/usr/local/include/opencv2/opencv2/viz.hpp
 opencv2/cudaarithm.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudaarithm.hpp
+/usr/local/include/opencv2/opencv2/cudaarithm.hpp
 opencv2/cudabgsegm.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudabgsegm.hpp
+/usr/local/include/opencv2/opencv2/cudabgsegm.hpp
 opencv2/cudacodec.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudacodec.hpp
+/usr/local/include/opencv2/opencv2/cudacodec.hpp
 opencv2/cudafeatures2d.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudafeatures2d.hpp
+/usr/local/include/opencv2/opencv2/cudafeatures2d.hpp
 opencv2/cudafilters.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudafilters.hpp
+/usr/local/include/opencv2/opencv2/cudafilters.hpp
 opencv2/cudaimgproc.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudaimgproc.hpp
+/usr/local/include/opencv2/opencv2/cudaimgproc.hpp
 opencv2/cudaobjdetect.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudaobjdetect.hpp
+/usr/local/include/opencv2/opencv2/cudaobjdetect.hpp
 opencv2/cudaoptflow.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudaoptflow.hpp
+/usr/local/include/opencv2/opencv2/cudaoptflow.hpp
 opencv2/cudastereo.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudastereo.hpp
+/usr/local/include/opencv2/opencv2/cudastereo.hpp
 opencv2/cudawarping.hpp
-/usr/local/include/opencv4/opencv2/opencv2/cudawarping.hpp
+/usr/local/include/opencv2/opencv2/cudawarping.hpp
 
-/usr/local/include/opencv4/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/opencv_modules.hpp
 
-/usr/local/include/opencv4/opencv2/photo.hpp
+/usr/local/include/opencv2/photo.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/opencv2/imgproc.hpp
+/usr/local/include/opencv2/opencv2/imgproc.hpp
+opencv2/photo/photo_c.h
+/usr/local/include/opencv2/opencv2/photo/photo_c.h
 
-/usr/local/include/opencv4/opencv2/shape.hpp
+/usr/local/include/opencv2/photo/photo_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/photo/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/shape.hpp
 opencv2/shape/emdL1.hpp
-/usr/local/include/opencv4/opencv2/opencv2/shape/emdL1.hpp
+/usr/local/include/opencv2/opencv2/shape/emdL1.hpp
 opencv2/shape/shape_transformer.hpp
-/usr/local/include/opencv4/opencv2/opencv2/shape/shape_transformer.hpp
+/usr/local/include/opencv2/opencv2/shape/shape_transformer.hpp
 opencv2/shape/hist_cost.hpp
-/usr/local/include/opencv4/opencv2/opencv2/shape/hist_cost.hpp
+/usr/local/include/opencv2/opencv2/shape/hist_cost.hpp
 opencv2/shape/shape_distance.hpp
-/usr/local/include/opencv4/opencv2/opencv2/shape/shape_distance.hpp
+/usr/local/include/opencv2/opencv2/shape/shape_distance.hpp
 
-/usr/local/include/opencv4/opencv2/shape/emdL1.hpp
+/usr/local/include/opencv2/shape/emdL1.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/shape/opencv2/core.hpp
+/usr/local/include/opencv2/shape/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/shape/hist_cost.hpp
+/usr/local/include/opencv2/shape/hist_cost.hpp
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/shape/opencv2/imgproc.hpp
+/usr/local/include/opencv2/shape/opencv2/imgproc.hpp
 
-/usr/local/include/opencv4/opencv2/shape/shape_distance.hpp
+/usr/local/include/opencv2/shape/shape_distance.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/shape/opencv2/core.hpp
+/usr/local/include/opencv2/shape/opencv2/core.hpp
 opencv2/shape/hist_cost.hpp
-/usr/local/include/opencv4/opencv2/shape/opencv2/shape/hist_cost.hpp
+/usr/local/include/opencv2/shape/opencv2/shape/hist_cost.hpp
 opencv2/shape/shape_transformer.hpp
-/usr/local/include/opencv4/opencv2/shape/opencv2/shape/shape_transformer.hpp
+/usr/local/include/opencv2/shape/opencv2/shape/shape_transformer.hpp
 
-/usr/local/include/opencv4/opencv2/shape/shape_transformer.hpp
+/usr/local/include/opencv2/shape/shape_transformer.hpp
 vector
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/shape/opencv2/core.hpp
+/usr/local/include/opencv2/shape/opencv2/core.hpp
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/shape/opencv2/imgproc.hpp
+/usr/local/include/opencv2/shape/opencv2/imgproc.hpp
 
-/usr/local/include/opencv4/opencv2/stitching.hpp
+/usr/local/include/opencv2/stitching.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/features2d.hpp
-/usr/local/include/opencv4/opencv2/opencv2/features2d.hpp
+/usr/local/include/opencv2/opencv2/features2d.hpp
 opencv2/stitching/warpers.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching/warpers.hpp
+/usr/local/include/opencv2/opencv2/stitching/warpers.hpp
 opencv2/stitching/detail/matchers.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching/detail/matchers.hpp
+/usr/local/include/opencv2/opencv2/stitching/detail/matchers.hpp
 opencv2/stitching/detail/motion_estimators.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching/detail/motion_estimators.hpp
+/usr/local/include/opencv2/opencv2/stitching/detail/motion_estimators.hpp
 opencv2/stitching/detail/exposure_compensate.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching/detail/exposure_compensate.hpp
+/usr/local/include/opencv2/opencv2/stitching/detail/exposure_compensate.hpp
 opencv2/stitching/detail/seam_finders.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching/detail/seam_finders.hpp
+/usr/local/include/opencv2/opencv2/stitching/detail/seam_finders.hpp
 opencv2/stitching/detail/blenders.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching/detail/blenders.hpp
+/usr/local/include/opencv2/opencv2/stitching/detail/blenders.hpp
 opencv2/stitching/detail/camera.hpp
-/usr/local/include/opencv4/opencv2/opencv2/stitching/detail/camera.hpp
+/usr/local/include/opencv2/opencv2/stitching/detail/camera.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
+/usr/local/include/opencv2/stitching/detail/blenders.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
-opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core/cuda.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
+/usr/local/include/opencv2/stitching/detail/camera.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp
+/usr/local/include/opencv2/stitching/detail/exposure_compensate.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp
+/usr/local/include/opencv2/stitching/detail/matchers.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 opencv2/features2d.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/features2d.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/features2d.hpp
 opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/opencv_modules.hpp
 opencv2/xfeatures2d/cuda.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/xfeatures2d/cuda.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/xfeatures2d/cuda.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp
+/usr/local/include/opencv2/stitching/detail/motion_estimators.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 matchers.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp
+/usr/local/include/opencv2/stitching/detail/matchers.hpp
 util.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/util.hpp
+/usr/local/include/opencv2/stitching/detail/util.hpp
 camera.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
+/usr/local/include/opencv2/stitching/detail/camera.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp
+/usr/local/include/opencv2/stitching/detail/seam_finders.hpp
 set
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/opencv_modules.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/util.hpp
+/usr/local/include/opencv2/stitching/detail/util.hpp
 list
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 util_inl.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp
+/usr/local/include/opencv2/stitching/detail/util_inl.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp
+/usr/local/include/opencv2/stitching/detail/util_inl.hpp
 queue
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 util.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/util.hpp
+/usr/local/include/opencv2/stitching/detail/util.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
+/usr/local/include/opencv2/stitching/detail/warpers.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core/cuda.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core/cuda.hpp
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/imgproc.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/imgproc.hpp
 opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/opencv_modules.hpp
 warpers_inl.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
+/usr/local/include/opencv2/stitching/detail/warpers_inl.hpp
 
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
+/usr/local/include/opencv2/stitching/detail/warpers_inl.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/opencv2/core.hpp
+/usr/local/include/opencv2/stitching/detail/opencv2/core.hpp
 warpers.hpp
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
+/usr/local/include/opencv2/stitching/detail/warpers.hpp
 limits
 -
 
-/usr/local/include/opencv4/opencv2/stitching/warpers.hpp
+/usr/local/include/opencv2/stitching/warpers.hpp
 opencv2/stitching/detail/warpers.hpp
-/usr/local/include/opencv4/opencv2/stitching/opencv2/stitching/detail/warpers.hpp
+/usr/local/include/opencv2/stitching/opencv2/stitching/detail/warpers.hpp
 
-/usr/local/include/opencv4/opencv2/superres.hpp
+/usr/local/include/opencv2/superres.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 opencv2/superres/optical_flow.hpp
-/usr/local/include/opencv4/opencv2/opencv2/superres/optical_flow.hpp
+/usr/local/include/opencv2/opencv2/superres/optical_flow.hpp
 
-/usr/local/include/opencv4/opencv2/superres/optical_flow.hpp
+/usr/local/include/opencv2/superres/optical_flow.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/superres/opencv2/core.hpp
+/usr/local/include/opencv2/superres/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/video.hpp
+/usr/local/include/opencv2/video.hpp
 opencv2/video/tracking.hpp
-/usr/local/include/opencv4/opencv2/opencv2/video/tracking.hpp
+/usr/local/include/opencv2/opencv2/video/tracking.hpp
 opencv2/video/background_segm.hpp
-/usr/local/include/opencv4/opencv2/opencv2/video/background_segm.hpp
+/usr/local/include/opencv2/opencv2/video/background_segm.hpp
+opencv2/video/tracking_c.h
+/usr/local/include/opencv2/opencv2/video/tracking_c.h
 
-/usr/local/include/opencv4/opencv2/video/background_segm.hpp
+/usr/local/include/opencv2/video/background_segm.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/video/opencv2/core.hpp
+/usr/local/include/opencv2/video/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/video/tracking.hpp
+/usr/local/include/opencv2/video/tracking.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/video/opencv2/core.hpp
+/usr/local/include/opencv2/video/opencv2/core.hpp
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/video/opencv2/imgproc.hpp
+/usr/local/include/opencv2/video/opencv2/imgproc.hpp
 
-/usr/local/include/opencv4/opencv2/videoio.hpp
+/usr/local/include/opencv2/video/tracking_c.h
+opencv2/imgproc/types_c.h
+/usr/local/include/opencv2/video/opencv2/imgproc/types_c.h
+
+/usr/local/include/opencv2/videoio.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+/usr/local/include/opencv2/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/videostab.hpp
+/usr/local/include/opencv2/videoio/videoio_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/videoio/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/videostab.hpp
 opencv2/videostab/stabilizer.hpp
-/usr/local/include/opencv4/opencv2/opencv2/videostab/stabilizer.hpp
+/usr/local/include/opencv2/opencv2/videostab/stabilizer.hpp
 opencv2/videostab/ring_buffer.hpp
-/usr/local/include/opencv4/opencv2/opencv2/videostab/ring_buffer.hpp
+/usr/local/include/opencv2/opencv2/videostab/ring_buffer.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/deblurring.hpp
+/usr/local/include/opencv2/videostab/deblurring.hpp
 vector
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/fast_marching.hpp
+/usr/local/include/opencv2/videostab/fast_marching.hpp
 cmath
 -
 queue
@@ -4622,133 +4956,129 @@ queue
 algorithm
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 fast_marching_inl.hpp
-/usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
+/usr/local/include/opencv2/videostab/fast_marching_inl.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
+/usr/local/include/opencv2/videostab/fast_marching_inl.hpp
 opencv2/videostab/fast_marching.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/fast_marching.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/fast_marching.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/frame_source.hpp
+/usr/local/include/opencv2/videostab/frame_source.hpp
 vector
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/global_motion.hpp
+/usr/local/include/opencv2/videostab/global_motion.hpp
 vector
 -
 fstream
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 opencv2/features2d.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/features2d.hpp
+/usr/local/include/opencv2/videostab/opencv2/features2d.hpp
 opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/videostab/opencv2/opencv_modules.hpp
 opencv2/videostab/optical_flow.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/optical_flow.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/optical_flow.hpp
 opencv2/videostab/motion_core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/motion_core.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/motion_core.hpp
 opencv2/videostab/outlier_rejection.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/outlier_rejection.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/outlier_rejection.hpp
 opencv2/cudaimgproc.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/cudaimgproc.hpp
+/usr/local/include/opencv2/videostab/opencv2/cudaimgproc.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/inpainting.hpp
+/usr/local/include/opencv2/videostab/inpainting.hpp
 vector
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 opencv2/videostab/optical_flow.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/optical_flow.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/optical_flow.hpp
 opencv2/videostab/fast_marching.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/fast_marching.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/fast_marching.hpp
 opencv2/videostab/global_motion.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/global_motion.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/global_motion.hpp
 opencv2/photo.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/photo.hpp
+/usr/local/include/opencv2/videostab/opencv2/photo.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/log.hpp
+/usr/local/include/opencv2/videostab/log.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/motion_core.hpp
+/usr/local/include/opencv2/videostab/motion_core.hpp
 cmath
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/motion_stabilizing.hpp
+/usr/local/include/opencv2/videostab/motion_stabilizing.hpp
 vector
 -
 utility
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 opencv2/videostab/global_motion.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/global_motion.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/global_motion.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/optical_flow.hpp
+/usr/local/include/opencv2/videostab/optical_flow.hpp
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 opencv2/opencv_modules.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/opencv_modules.hpp
+/usr/local/include/opencv2/videostab/opencv2/opencv_modules.hpp
 opencv2/cudaoptflow.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/cudaoptflow.hpp
+/usr/local/include/opencv2/videostab/opencv2/cudaoptflow.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/outlier_rejection.hpp
+/usr/local/include/opencv2/videostab/outlier_rejection.hpp
 vector
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 opencv2/videostab/motion_core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/motion_core.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/motion_core.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/ring_buffer.hpp
+/usr/local/include/opencv2/videostab/ring_buffer.hpp
 vector
 -
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/imgproc.hpp
+/usr/local/include/opencv2/videostab/opencv2/imgproc.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
+/usr/local/include/opencv2/videostab/stabilizer.hpp
 vector
 -
 ctime
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/imgproc.hpp
+/usr/local/include/opencv2/videostab/opencv2/imgproc.hpp
 opencv2/videostab/global_motion.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/global_motion.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/global_motion.hpp
 opencv2/videostab/motion_stabilizing.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/motion_stabilizing.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/motion_stabilizing.hpp
 opencv2/videostab/frame_source.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/frame_source.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/frame_source.hpp
 opencv2/videostab/log.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/log.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/log.hpp
 opencv2/videostab/inpainting.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/inpainting.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/inpainting.hpp
 opencv2/videostab/deblurring.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/deblurring.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/deblurring.hpp
 opencv2/videostab/wobble_suppression.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/wobble_suppression.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/wobble_suppression.hpp
 
-/usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
+/usr/local/include/opencv2/videostab/wobble_suppression.hpp
 vector
 -
 opencv2/core.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core.hpp
+/usr/local/include/opencv2/videostab/opencv2/core.hpp
 opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/core/cuda.hpp
+/usr/local/include/opencv2/videostab/opencv2/core/cuda.hpp
 opencv2/videostab/global_motion.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/global_motion.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/global_motion.hpp
 opencv2/videostab/log.hpp
-/usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/log.hpp
-
-/usr/local/include/opencv4/opencv2/xfeatures2d/cuda.hpp
-opencv2/core/cuda.hpp
-/usr/local/include/opencv4/opencv2/xfeatures2d/opencv2/core/cuda.hpp
+/usr/local/include/opencv2/videostab/opencv2/videostab/log.hpp
 

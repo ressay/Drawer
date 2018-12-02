@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Project_autogen.dir//AutogenOldSettings.cmake"
-  "Project_autogen/"
+  "Project_autogen"
+  "CMakeFiles/Project_autogen.dir/AutogenOldSettings.cmake"
   "main.moc"
   "CMakeFiles/Project.dir/main.cpp.o"
   "CMakeFiles/Project.dir/Useful/BasicMethods.cpp.o"
@@ -12,7 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/Drawing/Drawer.cpp.o"
   "CMakeFiles/Project.dir/Drawing/DrawManager.cpp.o"
   "CMakeFiles/Project.dir/Useful/Clusterer.cpp.o"
-  "CMakeFiles/Project.dir/Project_autogen/moc_compilation.cpp.o"
+  "CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o"
   "Project.pdb"
   "Project"
 )

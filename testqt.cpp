@@ -20,7 +20,8 @@ testQT::testQT(QWidget *parent)
 : QMainWindow(parent)
         {
                 ui.setupUi(this);
-        connect(ui.b1, SIGNAL(clicked()), this, SLOT(testClick()));
+                connect(ui.b1, SIGNAL(clicked()), this, SLOT(testClick()));
+
         }
 
 testQT::~testQT()
