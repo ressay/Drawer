@@ -1,0 +1,12 @@
+-I/usr/local/include/opencv4
+-I/usr/include/x86_64-linux-gnu/qt5
+-I/usr/include/x86_64-linux-gnu/qt5/QtWidgets
+-I/usr/include/x86_64-linux-gnu/qt5/QtGui
+-I/usr/include/x86_64-linux-gnu/qt5/QtCore
+-I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64
+-I/usr/include
+-I/home/ressay/StudiesTPM2/Vision/Project
+-I/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug
+-o
+/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/main.moc
+/home/ressay/StudiesTPM2/Vision/Project/main.cpp
