@@ -72,9 +72,7 @@
 	\par 
 	Le but principale derrière ce projet est la familiarisation avec les outils théorique vus en cours,
 	ainsi que l'utilisation de ces derniers en pratique. La difficulté réside aussi dans l'élaboration
-	d'un système robuste (dans la limite du possible) au bruit et aux conditions d'utilisation, Nous
-	utiliserons une technique que nous avons développé pour filtrer le bruit ambiant, nous la 
-	comparerons ensuite avec une méthode classique, pour enfin conclure avec des perspectives futurs.
+	d'un système robuste (dans la limite du possible) au bruit et aux conditions d'utilisation.
 	\par 
 	Le rapport est divisé en 3(trois) chapitres, le premier se concentrera sur des définitions formelles
 	des concepts et technique que nous utiliserons dans notre système. Le chapitre suivant présentera
@@ -85,7 +83,7 @@
 	
 	\section{Définitions}
 	\paragraph{}
-	Comme mentionné plus haut, nous allons commencer par quelques définitions que nous avons jugé 
+	Comme mentionné plus haut, nous allons commencer par quelques définitions que nous avons jugées 
 	importantes pour la suite de ce rapport.
 	
 		\subsection{Une image sous différents angles}
@@ -168,7 +166,7 @@
 	
 		\subsection{Environnement de travail}
 		\paragraph{}
-		Comme environnement de travail, nous avons utilisé une machine avec des ressources modeste(pour mieux
+		Comme environnement de travail, nous avons utilisé une machine avec des ressources modestes (pour mieux
 		voir comment le système se comporte dans des conditions peu favorables), les caractéristiques de la 
 		machine sont les suivantes :
 		
@@ -176,7 +174,7 @@
 			\centering
 			\includegraphics[scale=0.75]{imgs/machineA.png}
 			\caption{Caractéristique de la machine de test}
-			\label{fig:CenterCorrect}
+			\label{fig:maxhineA}
 		\end{figure}
 		
 		\subsection{Langage}
@@ -195,14 +193,14 @@
 		\subsection{Qt framework}
 		\paragraph{}
 		\textbf{Qt} est une bibliothèque offrant le module GUI ( Graphical User Interface),
-		conçue pour la création des interfaces graphiques . Elle offre aussi la possibilité
-		de coder en C++ , JAVA , Python . . . etc. La réalisation d'une interface graphique
+		conçue pour la création des interfaces graphiques. Elle offre aussi la possibilité
+		de coder en C++ , JAVA , Python . . . etc.
 	
 	\section{Schéma global du système}
 	Le système se compose principalement de trois modules:
 	
 	\begin{itemize}
-		\item D’abord le module de détection récupère l’image de la caméra pour y détecter les couleurs recherché et génère des informations sur le curseurs i.e sa position et son état.
+		\item D’abord le module de détection récupère l’image de la caméra pour y détecter les couleurs recherchées et génère des informations sur le curseurs i.e sa position et son état.
 		
 		\item Le module de dessin reçoit les informations sur le curseur et les utilise pour générer l’image du dessin.
 		
@@ -236,7 +234,7 @@
 		\caption{Exemple centre de détection}
 		\label{fig:CenterCorrect}
 	\end{figure}
-	\textbf{Le problème} qui se pose en se limitant à la détection par intervalle c’est qu’elle est extrêmement sensible au bruit. Un pixel aberrant jugé appartenir à l’intervalle va fausser la position du centre, et ainsi un suivi médiocre de la couleur.
+	\textbf{Le problème} qui se pose en se limitant à la détection par intervalle c’est qu’elle est extrêmement sensible au bruit. Un pixel aberrant appartenant à l’intervalle va fausser la position du centre, et ainsi un suivi médiocre de la couleur.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.75]{imgs/centerExampleE.png}
@@ -244,7 +242,7 @@
 		\label{fig:CenterWrong}
 	\end{figure}
 	\section{Élimination du bruit par regroupement}
-	\paragraph{}Pour remédier au problème rencontré. Nous avons opté à éliminer le bruit en regroupant les pixels proches qui sont acceptés. Avec cette méthode le bruit sera représenté par de petits groupes de pixels qu'on éliminera.\\
+	\paragraph{}Pour remédier au problème rencontré, Nous avons opté à éliminer le bruit en regroupant les pixels proches qui sont acceptés. Avec cette méthode le bruit sera représenté par de petits groupes de pixels qu'on éliminera.\\
 	L’algorithme de regroupement fonctionne comme suit:
 	\begin{itemize}
 		\item Il prend en paramètre un seuil minimum pour jugé que deux pixels appartiennent au même groupe.
@@ -255,7 +253,13 @@
 		
 		\item L’algorithme s’arrête quand les groupes ne changent pas après une itération, ceci implique que tous les groupes sont éloignés entre eux.
 	\end{itemize}
-	\paragraph{seuil modifié*:}Comme le seuil donné en entré est défini pour regrouper deux pixels, il est donc inadapté pour le fusionnement de deux groupes contenant plus d’un pixel. Le seuil doit être donc ajusté en fonction de la taille des groupes. Nous avons choisi d’utiliser la formule suivante: \textbf{$nouveauSeuil = (seuil/2)*(racine(tailleG1)+racine(tailleG2)$} avec \textbf{$tailleG1$} et \textbf{$tailleG2$} les tailles des groupes un et deux respectivement.\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{imgs/grouping1.png}
+		\caption{Exemple déroulement de l'algorithme de regroupement}
+		\label{fig:Grouping}
+	\end{figure}
+	\paragraph{seuil modifié*:}Comme le seuil donné en entré est défini pour regrouper deux pixels, il est donc inadapté pour le fusionnement de deux groupes contenant plus d’un pixel. Le seuil doit être donc ajusté en fonction de la taille des groupes. Nous avons choisi d’utiliser la formule suivante: \textbf{$nouveauSeuil = (seuil/2)*(racine(tailleG1)+racine(tailleG2)$} avec \textbf{$tailleG1$} et \textbf{$tailleG2$} le nombre de pixels contenus par les groupes un et deux respectivement.\\
 	L’intuition derrière cette formule, c’est que la distance entre deux centres de carrés collés est égale à $1/2*cote1+1/2*cote2$, avec cote1 et cote2 les cotés des deux carrés.
 	\begin{figure}[H]
 		\centering
@@ -263,7 +267,7 @@
 		\caption{Exemple distance entre deux carrés collés}
 		\label{fig:DistanceSquares}
 	\end{figure}
-	Dans notre cas, la taille du coté d’un pixel est l’unité de mesure de distance. La distance entre deux pixels peut être écrite en fonction de la taille de son coté comme suit: \textbf{$(distance/2)*(cotep+cotep)$} avec \textbf{$cotep$} la valeur d’un coté de pixel, comme cotep=1 (l’unité de mesure) la formule précédente se réduit en la valeur de distance.
+	Dans notre cas, la taille du coté d’un pixel est l’unité de mesure de distance. La distance entre deux pixels peut être écrite en fonction de la taille de son coté comme suit: \textbf{$(distance/2)*(cotep+cotep)$} avec \textbf{$cotep$} la valeur d’un coté de pixel. Comme cotep=1 (l’unité de mesure) la formule précédente se réduit en la valeur de distance.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.75]{imgs/distancePixels.png}
@@ -279,12 +283,7 @@
 	\end{figure}
 	\paragraph{Complexité}La complexité de l’algorithme est de $O(n²*log(n))$, $n$ étant le nombre de pixels acceptés. À chaque itération de l’algorithme pour chaque groupe on cherche un groupe avec lequel on le fusionne, au pire cas on passe par tous les groupes, et donc une complexité quadratique par itération. On fait $log(n)$ itération au max, car un groupe qui n’est pas fusionné lors d’une itération sera enlevé dans les prochaines itérations, donc au pire cas le nombre de groupes qui résulte d’une itération est égale au nombre de groupe initial divisé sur deux, cas où on fusionne les groupes deux par deux, d’où la complexité logarithmique.\\
 	Il est à noter que l'opération de fusion se fait en $log(n)$ en utilisant une structure d'ensembles disjoints\footnote{plus d'information sur la structure d'ensembles disjoints: \href{https://en.wikipedia.org/wiki/Disjoint-set_data_structure}{https://en.wikipedia.org/wiki/Disjoint-set\_data\_structure}}.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.75]{imgs/grouping1.png}
-		\caption{Exemple déroulement de l'algorithme de regroupement}
-		\label{fig:Grouping}
-	\end{figure}
+	
 	\paragraph{Inconvénients}
 	
 	Le premier inconvénient est le temps de calcule de l’algorithme. Si le nombre de pixels détecté par la première partie est important, la complexité quadratique ne convient pas à une détection en temps réel.\\
@@ -310,7 +309,7 @@
 	Dans ce chapitre nous allons détailler l’application qui utilise les méthodes présentées précédemment afin de permettre à un utilisateur de dessiner avec ses doigts.
 	\section{Utilisation}
 	\paragraph{}
-	L’application commence d’abord par donner la main à l’utilisateur pour choisir les couleurs à détecter. Ceci se fait en les mettant dans une zone définit par l’application afin qu’elle puisse récupérer les couleurs à suivre.\\
+	L’application commence d’abord par donner la main à l’utilisateur pour choisir les couleurs à détecter. Ceci se fait en les mettant dans une zone définie par l’application afin qu’elle puisse récupérer les couleurs à suivre.\\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.6]{imgs/initColors.png}
@@ -321,18 +320,18 @@
 	L’interface contient principalement 3 parties:
 	\begin{itemize}
 		\item 1-2 :Options de l’application:
-		\item 3 : Espace de dessin.
-		\item 4 : Image récupéré par la caméra avec les centres des couleurs détectées.
 		\begin{itemize}
 			\item Changer la méthode de détection, i.e par regroupement ou par série d’érosions/dilatations.
 			\item Affichage des images de détections en niveau de gris.
 		\end{itemize}
+		\item 3 : Espace de dessin.
+		\item 4 : Image récupéré par la caméra avec les centres des couleurs détectées.
 	\end{itemize}
 		\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.6]{imgs/main.png}
 		\caption{Les partie de l'application}
-		\label{fig:InitColors}
+		\label{fig:AppParts}
 	\end{figure}
 
 	\paragraph{Espace de dessin}
@@ -350,13 +349,13 @@
 	
 	Il existe 3 types d’actions que le module de dessin peut prendre:
 	\begin{itemize}
-		\item Dessiner quand le curseur est active dans la partie feuille de dessin.
-		\item Changer la couleur du curseur s’il détecte un clique sur une couleur de la partie paramétrage qui est différente de la couleur courante.
-		\item Changer la taille du curseur s’il détecte un clique sur la couleur courante.  
+		\item Dessiner: quand le curseur est active dans la partie feuille de dessin.
+		\item Changer la couleur du curseur: s’il détecte un clique sur une couleur de la partie paramétrage qui est différente de la couleur courante.
+		\item Changer la taille du curseur: s’il détecte un clique sur la couleur courante.  
 	\end{itemize}
 	\paragraph{}
 	La dernière partie de l’interface graphique permet de visualiser comment les algorithmes de détection marche, par exemple on peut voir les groupes générés ainsi que leurs centres:
-	\begin{figure}
+	\begin{figure}[H]
 		\centering
 		\begin{subfigure}{.5\textwidth}
 			\centering
