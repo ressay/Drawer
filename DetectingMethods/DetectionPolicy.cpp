@@ -300,17 +300,23 @@ bool equals(Mat m1, Mat m2)
 }
 Point DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc)
 {
-    Mat img = imgsrc->clone();
-    Mat toCmp = img.clone();
-    Mat prev = img.clone();
+    Mat toCmp = imgsrc->clone();
     Mat elem = getStructuringElement(MORPH_ELLIPSE,Size(3,3));
     dilate(toCmp,toCmp,elem);
+    Mat img = toCmp.clone();
+    Mat prev = img.clone();
+
+    int i = 1;
     while(!isEmpty(img))
     {
         prev = img.clone();
         erode(img,img,elem);
+        string s = "gen/erode"+std::to_string(i)+".png";
+        imwrite(s,prev);
+        i++;
     }
     img = prev.clone();
+    i = 1;
     do
     {
         prev = img.clone();
@@ -325,6 +331,9 @@ Point DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc)
                 }
             }
         }
+        string s = "gen/dilate"+std::to_string(i)+".png";
+        imwrite(s,prev);
+        i++;
 
     }while(!equals(prev,img));
     int mx=0,my=0,count=0;

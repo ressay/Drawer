@@ -7,6 +7,8 @@
 \usepackage{fontspec}
 \usepackage{wrapfig}
 \usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{caption}
 \usepackage{soul}
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
 % \usepackage[hyphens, spaces, obeyspaces]{url}
@@ -43,7 +45,6 @@
 \definecolor{light-gray}{gray}{0.90}
 \usepackage{multirow}
 \usepackage{soul}
-\usepackage{graphicx}
 \usepackage[utf8x]{inputenc}
 \setcounter{secnumdepth}{3} 
 \usepackage{dirtytalk}
@@ -148,15 +149,16 @@ Soit la couleur choisie H1S1V1, et le pixel candidat HSV, les conditions que doi
 	\label{fig:CenterWrong}
 \end{figure}
 \section{Élimination du bruit par regroupement}
-\paragraph{}Pour remédier au problème rencontré. Nous avons opté à éliminer le bruit en regroupant les pixels proches qui sont acceptés. L’algorithme de regroupement fonctionne comme suit:
+\paragraph{}Pour remédier au problème rencontré. Nous avons opté à éliminer le bruit en regroupant les pixels proches qui sont acceptés. Avec cette méthode le bruit sera représenté par de petits groupes de pixels qu'on éliminera.\\
+L’algorithme de regroupement fonctionne comme suit:
 \begin{itemize}
 	\item Il prend en paramètre un seuil minimum pour jugé que deux pixels appartiennent au même groupe.
 	
 	\item Au début chaque pixel est dans un groupe à part.
 	
-	\item L’algorithme passe par plusieurs itérations de regroupement, dans une itération chaque groupe est fusionné avec un autre dont la distance est inférieur au seuil modifié* s'il existe, la fusion des groupes n'est pas parallèle, un groupe peut être fusionné avec un autre créé au cours de la même itération.
+	\item L’algorithme passe par plusieurs itérations de regroupement, dans une itération chaque groupe de pixel est fusionné avec un autre dont la distance est inférieur au seuil modifié* s'il existe, ainsi on regroupe les pixels proches entre eux dans un seul groupe.
 	
-	\item L’algorithme s’arrête quand les groupes ne changent pas après une itération.
+	\item L’algorithme s’arrête quand les groupes ne changent pas après une itération, ceci implique que tous les groupes sont éloignés entre eux.
 \end{itemize}
 \paragraph{seuil modifié*:}Comme le seuil donné en entré est défini pour regrouper deux pixels, il est donc inadapté pour le fusionnement de deux groupes contenant plus d’un pixel. Le seuil doit être donc ajusté en fonction de la taille des groupes. Nous avons choisi d’utiliser la formule suivante: \textbf{$nouveauSeuil = (seuil/2)*(racine(tailleG1)+racine(tailleG2)$} avec \textbf{$tailleG1$} et \textbf{$tailleG2$} les tailles des groupes un et deux respectivement.\\
 L’intuition derrière cette formule, c’est que la distance entre deux centres de carrés collés est égale à $1/2*cote1+1/2*cote2$, avec cote1 et cote2 les cotés des deux carrés.
@@ -180,13 +182,100 @@ Si on projette cela sur un groupe de pixels carré, la taille de son coté est �
 	\caption{Exemple de coté d'un groupe de pixels}
 	\label{fig:GroupeSide}
 \end{figure}
+\paragraph{Complexité}La complexité de l’algorithme est de $O(n²*log(n))$, $n$ étant le nombre de pixels acceptés. À chaque itération de l’algorithme pour chaque groupe on cherche un groupe avec lequel on le fusionne, au pire cas on passe par tous les groupes, et donc une complexité quadratique par itération. On fait $log(n)$ itération au max, car un groupe qui n’est pas fusionné lors d’une itération sera enlevé dans les prochaines itérations, donc au pire cas le nombre de groupes qui résulte d’une itération est égale au nombre de groupe initial divisé sur deux, cas où on fusionne les groupes deux par deux, d’où la complexité logarithmique.\\
+Il est à noter que l'opération de fusion se fait en $log(n)$ en utilisant une structure d'ensembles disjoints\footnote{plus d'information sur la structure d'ensembles disjoints: \href{https://en.wikipedia.org/wiki/Disjoint-set_data_structure}{https://en.wikipedia.org/wiki/Disjoint-set\_data\_structure}}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/grouping1.png}
+	\caption{Exemple déroulement de l'algorithme de regroupement}
+	\label{fig:Grouping}
+\end{figure}
+\paragraph{Inconvénients}
+
+Le premier inconvénient est le temps de calcule de l’algorithme. Si le nombre de pixels détecté par la première partie est important, la complexité quadratique ne convient pas à une détection en temps réel.\\
+
+Le deuxième inconvénient est le fait qu’on a besoin d’un seuillage pour faire le regroupement. Un seuil petit donne de bon résultat avec un grand intervalle de détection, il est robuste par rapport au bruit proche à l’objet qu’on suit. Par contre si l’intervalle de détection est petit, l’objet peut être divisé en deux groupes. Le contraire s’applique si le seuil est grand, un grand intervalle pourrait regrouper des pixels qui n’appartiennent pas à l’objet dans le même groupe que ce dernier.
+\section{Élimination du bruit par érosion et dilatation}
+Le principe de cette méthode est simple, on représente les pixels acceptés dans une image en niveau de gris, le pixel est blanc s’il est accepté et noir sinon. On applique une série d’érosions jusqu’à ce qu’on a que des pixels noir, et on garde la dernière image non nul. Dans cette dernière, les pixels non noir appartiennent probablement à l’objet qu’on veut détecter, avec l’hypothèse que l’arrière plan ne contient pas la couleur recherchée. La suite sera d’appliquer une série de dilatation tout en gardant en blanc que les pixels qui étaient blancs dans l’image d’origine, on s’arrête quand l’image ne change pas. Ainsi on est sur que les pixels en blanc après ces deux séries ont été détectés au préalable et qu’ils ont une forte chance d’appartenir à l’objet suivi.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/erosions1.png}
+	\caption{Exemple application d'une série d'érosions}
+	\label{fig:Erosions}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{imgs/dilatations1.png}
+	\caption{Exemple application d'une série de dilatations}
+	\label{fig:Dilatations}
+\end{figure}
 \section{Conclusion}
 Kheliahli rak ta3ref xD 
 
 
 \chapter{Présentation de l'application}
-
+Dans ce chapitre nous allons détailler l’application qui utilise les méthodes présentées précédemment afin de permettre à un utilisateur de dessiner avec ses doigts.
 \section{Diagramme d'utilisation}
+\paragraph{}
+L’application commence d’abord par donner la main à l’utilisateur pour choisir les couleurs à détecter. Ceci se fait en les mettant dans une zone définit par l’application afin qu’elle puisse récupérer les couleurs à suivre.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{imgs/initColors.png}
+	\caption{L'étape initiation de couleurs à suivre}
+	\label{fig:InitColors}
+\end{figure}
+L’interface contient principalement 3 parties:
+\begin{itemize}
+	\item Image récupéré par la caméra avec les centres des couleurs détectées.
+	\item Espace de dessin.
+	\item Options de l’application:
+	\begin{itemize}
+		\item Changer la méthode de détection, i.e par regroupement ou par série d’érosions/dilatations.
+		\item Affichage des images de détections en niveau de gris.
+	\end{itemize}
+\end{itemize}
+
+\paragraph{Espace de dessin}
+Cette espace est géré principalement par le module de dessin cité dans le chapitre précédent. Ce module utilise juste l’information sur le curseur, sa position et son état d’activation, pour déterminer l’action à prendre. L’espace de dessin est composé de deux parties:
+\begin{itemize}
+	\item La partie paramétrage dans laquelle on peut changer les paramètres du dessin.
+	\item La partie feuille de dessin, c’est dans cette partie que l’utilisateur va réaliser son dessin.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{imgs/Drawer.png}
+		\caption{L'espace de dessin}
+		\label{fig:Drawer}
+	\end{figure}
+\end{itemize}
+
+Il existe 3 types d’actions que le module de dessin peut prendre:
+\begin{itemize}
+	\item Dessiner quand le curseur est active dans la partie feuille de dessin.
+	\item Changer la couleur du curseur s’il détecte un clique sur une couleur de la partie paramétrage qui est différente de la couleur courante.
+	\item Changer la taille du curseur s’il détecte un clique sur la couleur courante.  
+\end{itemize}
+\paragraph{}
+La dernière partie de l’interface graphique permet de visualiser comment les algorithmes de détection marche, par exemple on peut voir les groupes générés ainsi que leurs centres:
+\begin{figure}
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.4\linewidth]{imgs/notGrouped.png}
+		\caption{A subfigure}
+		\label{fig:sub1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.4\linewidth]{imgs/notGrouped.png}
+		\caption{A subfigure}
+		\label{fig:sub2}
+	\end{subfigure}
+	\caption{A figure with two subfigures}
+	\label{fig:test}
+\end{figure}
+
+
 \section{Exemples d'utilisation}
 \section{Limitations}
 
