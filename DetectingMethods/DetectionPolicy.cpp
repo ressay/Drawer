@@ -7,75 +7,6 @@
 #include "DetectionPolicy.h"
 #include "Useful/BasicMethods.h"
 
-Mat equalizeIntensity(const Mat& inputImage)
-{
-    if(inputImage.channels() >= 3)
-    {
-        Mat ycrcb;
-
-        cvtColor(inputImage,ycrcb,cv::COLOR_BGR2HSV);
-
-        vector<Mat> channels;
-        split(ycrcb,channels);
-
-        equalizeHist(channels[1], channels[1]);
-
-        Mat result;
-        merge(channels,ycrcb);
-
-        cvtColor(ycrcb,result,cv::COLOR_HSV2BGR);
-
-        return result;
-    }
-    return Mat();
-}
-
-void cluster(Mat img)
-{
-    double scale = 6;
-    Mat imgsrc = img.clone();
-    cv::resize(img, imgsrc, Size(), 1. / scale, 1. / scale);
-    vector<ClusterPoint> points;
-    for (int i = 0; i < imgsrc.rows; ++i)
-    {
-        for (int j = 0; j < imgsrc.cols; ++j)
-        {
-            Vec3b v = imgsrc.at<Vec3b>(i,j);
-            double* vec = new double[5];
-            vec[0] = i; vec[1] = j;
-            vec[2] = v[0]; vec[3] = v[1]; vec[4] = v[2];
-            points.emplace_back(vec,5);
-        }
-    }
-    cout << points.size() << endl;
-    Mat newImg = imgsrc.clone();
-    Clusterer clusterer(points);
-    vector<Cluster> clusters = clusterer.findClusters(5);
-    cout << "I m out and number of clusters is " << clusters.size() << endl;
-    int minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
-    int maxSize = 0,index=-1;
-    for (int k = 0; k < clusters.size(); ++k)
-    {
-//        minX=INT32_MAX,minY=INT32_MAX,maxX=-1,maxY=-1;
-//        vector<int> pts = clusters[k].indexes;
-//        if(maxSize < pts.size())
-//        {
-//            maxSize = pts.size();
-//            index = k;
-//        }
-//        for (int i : pts)
-//        {
-//            if(minX > points[i].vec[0]) minX = points[i].vec[0];
-//            if(minY > points[i].vec[1]) minY = points[i].vec[1];
-//            if(maxX < points[i].vec[0]) maxX = points[i].vec[0];
-//            if(maxY < points[i].vec[1]) maxY = points[i].vec[1];
-//        }
-//        rectangle(newImg,Point(minY,minX),Point(maxY,maxX),Scalar(255,0,0));
-        circle(newImg,Point(clusters[k].avg.vec[1],clusters[k].avg.vec[0]),3,Scalar(0,0,255));
-    }
-    imshow("clustered",newImg);
-}
-
 bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, bool interrupt)
 {
     int h = frame.cols, w = frame.rows;
@@ -96,7 +27,6 @@ bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, 
     interrupt = waitKey(60) == 'a';
     if (interrupt)
     {
-        frame = equalizeIntensity(frame);
         cvtColor(frame, frame, cv::COLOR_BGR2HSV);
         color1 = getColor(frame, pt1, detectorsR);
         color2 = getColor(frame, pt2, detectorsR);
@@ -115,30 +45,20 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
 {
     Point p1, p2;
     double scale = 4;
-    bool grouping = true;
+    bool grouping = group;
     Mat img = imgsrc.clone();
     cv::resize(img,img,Size(640,480));
-//    img = equalizeIntensity(img);
-//    equalizeHist(img,dst);
-//    imshow("equ",img);
     cv::resize(img, img, Size(),1./scale,1./scale);
-//    flipFrame(img);
     cvtColor(img, img, cv::COLOR_BGR2HSV);
 
-//        Mat *result = getColorSegmentedImage(img, *color1, Vec3b(range, range, range));
-//        Vec3b shift = Vec3b(10,255-(*color1)[1],255-(*color1)[2]);
     Scalar c1 = *color1, c2 = *color2;
-    int diff = 9;
-    double r = 0.4;
+    int diff = 6;
+    double r = 0.7;
     Vec3b lower = Vec3b(c1[0] - diff, c1[1] * r, 20);
     Vec3b upper = Vec3b(c1[0] + diff, 255, 255);
 //    lower = Vec3b(c1[0] - diff, c1[1] -diff*2, c1[2]-diff*2);
 //    upper = Vec3b(c1[0] + diff, c1[1] +diff*2, c1[2]+diff*2);
-//        img = saturateImg(img,30);
     Mat *result = getColorSegmentedImage(img, lower, upper);
-//        imshow("res1",*result);
-//        Vec3b v = (*color1)*ratio+shift;
-//        cout << v << endl;
 
     if(!grouping)
     p1 = dynamicNoiseReduction(result);
@@ -146,19 +66,12 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
     p1 = getColorPosition(result);
     p1 *= scale;
 
-//        circle(img, p1, 7, Scalar(0, 250, 0), -1);
-//        Mat result = segmented->clone();
-//        Mat *result2 = getColorSegmentedImage(img, *color2, Vec3b(range, range, range));
-//        v = (*color2)*ratio+shift;
-//        cout << v << endl;
-//        shift = Vec3b(10,255-(*color2)[1],255-(*color2)[2]);
     lower = Vec3b(c2[0] - diff, c2[1] * r, 20);
     upper = Vec3b(c2[0] + diff, 255, 255);
 //    lower = Vec3b(c2[0] - diff, c2[1] -diff*2, c2[2]-diff*2);
 //    upper = Vec3b(c2[0] + diff, c2[1] +diff*2, c2[2]+diff*2);
 
     Mat *result2 = getColorSegmentedImage(img, lower, upper);
-//        imshow("res2",*result2);
     if(!grouping)
     p2 = dynamicNoiseReduction(result2);
     else
@@ -179,11 +92,8 @@ Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
         p2 = pr2;
     else
         pr2 = p2;
-//    cvtColor(img, img, cv::COLOR_HSV2BGR);
     delete result;
     delete result2;
-
-//    }
 
     return new Detection2Points(p1, p2);
 }
@@ -266,6 +176,7 @@ Point DetectionPolicy2PointsAuto::getColorPosition(Mat *segImg)
         mx /= pts.size();
         my /= pts.size();
     }
+    if(debug)
     imshow("clusters", newImg);
     if (count > 0 && clusters[index].indexes.size() > 5)
         return {mx, my};
@@ -311,8 +222,8 @@ Point DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc)
     {
         prev = img.clone();
         erode(img,img,elem);
-        string s = "gen/erode"+std::to_string(i)+".png";
-        imwrite(s,prev);
+//        string s = "gen/erode"+std::to_string(i)+".png";
+//        imwrite(s,prev);
         i++;
     }
     img = prev.clone();
@@ -331,8 +242,8 @@ Point DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc)
                 }
             }
         }
-        string s = "gen/dilate"+std::to_string(i)+".png";
-        imwrite(s,prev);
+//        string s = "gen/dilate"+std::to_string(i)+".png";
+//        imwrite(s,prev);
         i++;
 
     }while(!equals(prev,img));
@@ -349,8 +260,11 @@ Point DetectionPolicy2PointsAuto::dynamicNoiseReduction(Mat* imgsrc)
             }
         }
     }
-    imshow("origin",*imgsrc);
-    imshow("reduced",prev);
+    if(debug)
+    {
+        imshow("origin", *imgsrc);
+        imshow("reduced", prev);
+    }
 
     if(!count)
         return {-1,-1};

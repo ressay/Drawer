@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "Project_autogen"
-  "CMakeFiles/Project_autogen.dir/AutogenOldSettings.cmake"
+  "CMakeFiles/Project_autogen.dir//AutogenOldSettings.cmake"
+  "Project_autogen/"
   "CMakeFiles/Project_autogen"
 )
 

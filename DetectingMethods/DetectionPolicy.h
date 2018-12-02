@@ -44,6 +44,7 @@ public:
 class DetectionPolicy
 {
 public:
+    bool debug = false, group = false;
     virtual bool initDetection(Displayer* displayer, Mat frame,bool interrupt)=0;
     virtual Detection* getDetectedPoints(Mat img)=0;
 };

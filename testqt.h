@@ -20,7 +20,9 @@ public:
 public:
     Ui::testQTClass ui;
 private slots:
-    void testClick();
+    void start();
+    void grouping();
+    void debugging();
 };
 
 

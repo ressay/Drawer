@@ -31,47 +31,11 @@ int main(int argc, char *argv[])
 {
 
     QApplication a(argc, argv);
-    /**
-     * HERE CHANGE THAT ABSOLUTE PATH I COULDN'T SET IT DYNAMICALLY
-     */
-    QString style_sheet = readTextFile("/home/weiss/CODES/TP-VISION/Drawer/style.qss");
+    QString style_sheet = readTextFile("style.qss");
     a.setStyleSheet(style_sheet);
 	testQT w;
 	w.show();
 
-
-
-
-
 	return a.exec();
-//    VideoCapture cap;
-//
-////    VideoWriter* writer = nullptr;
-////    VideoWriter writer;
-//    if(!cap.open(0))
-//        return 0;
-//
-//    DetectionPolicy* detection = new DetectionPolicy2PointsAuto();
-//    Displayer* displayer =  new Displayer(&w);
-////    detection->initDetection(displayer,cap);
-//    Mat frame;
-//    while (true)
-//    {
-//        cap >> frame;
-//        vector<Point> points = detection->getDetectedPoints(frame);
-//        for (int i = 0; i < points.size(); ++i)
-//        {
-//            circle(frame,points[i],7,Scalar(0,250,0),-1);
-//        }
-//        displayer->displayImg(frame,"camera");
-//        int key = waitKey(120);
-//        if(key == 27) break;
-//    }
-////    VideoWriter writer("out.avi",VideoWriter::fourcc('M','J','P','G'),10,
-////                       Size(w,h));
-//    namedWindow("camera",WINDOW_AUTOSIZE);
-//
-//
-//    cap.release();
-//    return 0;
+
 }

@@ -19,9 +19,10 @@ using namespace std;
 testQT::testQT(QWidget *parent)
 : QMainWindow(parent)
         {
-                ui.setupUi(this);
-                connect(ui.b1, SIGNAL(clicked()), this, SLOT(testClick()));
-
+            ui.setupUi(this);
+            connect(ui.b1, SIGNAL(clicked()), this, SLOT(start()));
+            connect(ui.grouping_checkbox, SIGNAL(clicked()),this, SLOT(grouping()));
+            connect(ui.debug_checkbox, SIGNAL(clicked()),this, SLOT(debugging()));
         }
 
 testQT::~testQT()
@@ -29,7 +30,7 @@ testQT::~testQT()
 
 
 }
-void testQT::testClick()  {
+void testQT::start()  {
     VideoCapture cap;
 
     if(!cap.open(0))
@@ -51,6 +52,8 @@ void testQT::testClick()  {
     {
         cap >> frame;
         flipFrame(frame);
+        detector->debug = ui.debug_checkbox->isChecked();
+        detector->group = ui.grouping_checkbox->isChecked();
         Detection* detection = detector->getDetectedPoints(frame);
         detection->updateImg(frame);
         drawer->updateDrawing(detection);
@@ -61,4 +64,16 @@ void testQT::testClick()  {
     }
 
     cap.release();
+}
+
+void testQT::grouping()
+{
+    cout << "into grouping" << endl;
+}
+
+void testQT::debugging()
+{
+    cout << "into debugging" << endl;
+    if(!ui.debug_checkbox->isChecked())
+        cv::destroyAllWindows();
 }
