@@ -379,6 +379,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mainUI.o: mainUI.cpp.o
+
+.PHONY : mainUI.o
+
+# target to build an object file
+mainUI.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/mainUI.cpp.o
+.PHONY : mainUI.cpp.o
+
+mainUI.i: mainUI.cpp.i
+
+.PHONY : mainUI.i
+
+# target to preprocess a source file
+mainUI.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/mainUI.cpp.i
+.PHONY : mainUI.cpp.i
+
+mainUI.s: mainUI.cpp.s
+
+.PHONY : mainUI.s
+
+# target to generate assembly for a file
+mainUI.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/mainUI.cpp.s
+.PHONY : mainUI.cpp.s
+
 qrc_testqt.o: qrc_testqt.cpp.o
 
 .PHONY : qrc_testqt.o
@@ -405,33 +432,6 @@ qrc_testqt.s: qrc_testqt.cpp.s
 qrc_testqt.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/qrc_testqt.cpp.s
 .PHONY : qrc_testqt.cpp.s
-
-testqt.o: testqt.cpp.o
-
-.PHONY : testqt.o
-
-# target to build an object file
-testqt.cpp.o:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/testqt.cpp.o
-.PHONY : testqt.cpp.o
-
-testqt.i: testqt.cpp.i
-
-.PHONY : testqt.i
-
-# target to preprocess a source file
-testqt.cpp.i:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/testqt.cpp.i
-.PHONY : testqt.cpp.i
-
-testqt.s: testqt.cpp.s
-
-.PHONY : testqt.s
-
-# target to generate assembly for a file
-testqt.cpp.s:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/testqt.cpp.s
-.PHONY : testqt.cpp.s
 
 # Help Target
 help:
@@ -470,12 +470,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mainUI.o"
+	@echo "... mainUI.i"
+	@echo "... mainUI.s"
 	@echo "... qrc_testqt.o"
 	@echo "... qrc_testqt.i"
 	@echo "... qrc_testqt.s"
-	@echo "... testqt.o"
-	@echo "... testqt.i"
-	@echo "... testqt.s"
 .PHONY : help
 
 

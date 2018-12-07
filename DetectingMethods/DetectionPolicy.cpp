@@ -41,7 +41,7 @@ bool DetectionPolicy2PointsAuto::initDetection(Displayer *displayer, Mat frame, 
 
 
 
-Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat imgsrc)
+Detection *DetectionPolicy2PointsAuto::getDetectedPoints(Mat& imgsrc)
 {
     Point p1, p2;
     double scale = 4;

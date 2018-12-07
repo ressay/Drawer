@@ -46,7 +46,7 @@ class DetectionPolicy
 public:
     bool debug = false, group = false;
     virtual bool initDetection(Displayer* displayer, Mat frame,bool interrupt)=0;
-    virtual Detection* getDetectedPoints(Mat img)=0;
+    virtual Detection* getDetectedPoints(Mat& img)=0;
 };
 
 
@@ -60,7 +60,7 @@ public:
 
     bool initDetection(Displayer* displayer, Mat frame,bool interrupt) override;
 
-    Detection* getDetectedPoints(Mat img) override;
+    Detection* getDetectedPoints(Mat& img) override;
     Point dynamicNoiseReduction(Mat* img);
 };
 

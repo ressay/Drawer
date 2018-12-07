@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/Useful/BasicMethods.cpp.o"
   "CMakeFiles/Project.dir/Useful/Displayer.cpp.o"
   "CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o"
-  "CMakeFiles/Project.dir/testqt.cpp.o"
+  "CMakeFiles/Project.dir/mainUI.cpp.o"
   "CMakeFiles/Project.dir/qrc_testqt.cpp.o"
   "CMakeFiles/Project.dir/Useful/KeyHandler.cpp.o"
   "CMakeFiles/Project.dir/Drawing/Drawer.cpp.o"

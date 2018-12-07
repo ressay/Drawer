@@ -13,8 +13,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ressay/StudiesTPM2/Vision/Project/Useful/Displayer.cpp" "/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles/Project.dir/Useful/Displayer.cpp.o"
   "/home/ressay/StudiesTPM2/Vision/Project/Useful/KeyHandler.cpp" "/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles/Project.dir/Useful/KeyHandler.cpp.o"
   "/home/ressay/StudiesTPM2/Vision/Project/main.cpp" "/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o"
+  "/home/ressay/StudiesTPM2/Vision/Project/mainUI.cpp" "/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles/Project.dir/mainUI.cpp.o"
   "/home/ressay/StudiesTPM2/Vision/Project/qrc_testqt.cpp" "/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles/Project.dir/qrc_testqt.cpp.o"
-  "/home/ressay/StudiesTPM2/Vision/Project/testqt.cpp" "/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles/Project.dir/testqt.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

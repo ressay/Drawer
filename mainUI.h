@@ -7,7 +7,7 @@
 
 
 #include <QtWidgets/QMainWindow>
-#include "ui_testqt.h"
+#include "ui_main.h"
 
 class testQT: public QMainWindow
 {

@@ -5,8 +5,8 @@ CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o
  ..//Useful/BasicMethods.h
  ..//Useful/Clusterer.h
  ..//Useful/Displayer.h
- ..//testqt.h
- ../ui_testqt.h
+ ..//mainUI.h
+ ../ui_main.h
  /home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.cpp
  /home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -280,8 +280,8 @@ CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o
 CMakeFiles/Project.dir/Drawing/DrawManager.cpp.o
  ..//DetectingMethods/DetectionPolicy.h
  ..//Useful/Displayer.h
- ..//testqt.h
- ../ui_testqt.h
+ ..//mainUI.h
+ ../ui_main.h
  /home/ressay/StudiesTPM2/Vision/Project/Drawing/DrawManager.cpp
  /home/ressay/StudiesTPM2/Vision/Project/Drawing/DrawManager.h
  /home/ressay/StudiesTPM2/Vision/Project/Drawing/Drawer.h
@@ -555,8 +555,8 @@ CMakeFiles/Project.dir/Drawing/DrawManager.cpp.o
  /usr/local/include/opencv4/opencv2/xfeatures2d/cuda.hpp
 CMakeFiles/Project.dir/Drawing/Drawer.cpp.o
  ..//Useful/Displayer.h
- ..//testqt.h
- ../ui_testqt.h
+ ..//mainUI.h
+ ../ui_main.h
  /home/ressay/StudiesTPM2/Vision/Project/Drawing/Drawer.cpp
  /home/ressay/StudiesTPM2/Vision/Project/Drawing/Drawer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -828,10 +828,10 @@ CMakeFiles/Project.dir/Drawing/Drawer.cpp.o
  /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
  /usr/local/include/opencv4/opencv2/xfeatures2d/cuda.hpp
 CMakeFiles/Project.dir/Project_autogen/moc_compilation.cpp.o
- /home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_testqt.cpp
+ /home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_mainUI.cpp
  /home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/moc_compilation.cpp
- /home/ressay/StudiesTPM2/Vision/Project/testqt.h
- /home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h
+ /home/ressay/StudiesTPM2/Vision/Project/mainUI.h
+ /home/ressay/StudiesTPM2/Vision/Project/ui_main.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -1107,8 +1107,8 @@ CMakeFiles/Project.dir/Useful/Clusterer.cpp.o
  /home/ressay/StudiesTPM2/Vision/Project/Useful/Clusterer.cpp
  /home/ressay/StudiesTPM2/Vision/Project/Useful/Clusterer.h
 CMakeFiles/Project.dir/Useful/Displayer.cpp.o
- ..//testqt.h
- ../ui_testqt.h
+ ..//mainUI.h
+ ../ui_main.h
  /home/ressay/StudiesTPM2/Vision/Project/Useful/Displayer.cpp
  /home/ressay/StudiesTPM2/Vision/Project/Useful/Displayer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -1507,8 +1507,8 @@ CMakeFiles/Project.dir/main.cpp.o
  /home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.h
  /home/ressay/StudiesTPM2/Vision/Project/Useful/BasicMethods.h
  /home/ressay/StudiesTPM2/Vision/Project/main.cpp
- /home/ressay/StudiesTPM2/Vision/Project/testqt.h
- /home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h
+ /home/ressay/StudiesTPM2/Vision/Project/mainUI.h
+ /home/ressay/StudiesTPM2/Vision/Project/ui_main.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QFile
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
@@ -1778,18 +1778,16 @@ CMakeFiles/Project.dir/main.cpp.o
  /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
  /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
  /usr/local/include/opencv4/opencv2/xfeatures2d/cuda.hpp
-CMakeFiles/Project.dir/qrc_testqt.cpp.o
- /home/ressay/StudiesTPM2/Vision/Project/qrc_testqt.cpp
-CMakeFiles/Project.dir/testqt.cpp.o
+CMakeFiles/Project.dir/mainUI.cpp.o
  ..//DetectingMethods/DetectionPolicy.h
  ..//Drawing/DrawManager.h
  ..//Drawing/Drawer.h
  ..//Useful/BasicMethods.h
  ..//Useful/Displayer.h
  ../Drawing/Drawer.h
- /home/ressay/StudiesTPM2/Vision/Project/testqt.cpp
- /home/ressay/StudiesTPM2/Vision/Project/testqt.h
- /home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h
+ /home/ressay/StudiesTPM2/Vision/Project/mainUI.cpp
+ /home/ressay/StudiesTPM2/Vision/Project/mainUI.h
+ /home/ressay/StudiesTPM2/Vision/Project/ui_main.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMargins
@@ -2256,3 +2254,5 @@ CMakeFiles/Project.dir/testqt.cpp.o
  /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
  /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
  /usr/local/include/opencv4/opencv2/xfeatures2d/cuda.hpp
+CMakeFiles/Project.dir/qrc_testqt.cpp.o
+ /home/ressay/StudiesTPM2/Vision/Project/qrc_testqt.cpp

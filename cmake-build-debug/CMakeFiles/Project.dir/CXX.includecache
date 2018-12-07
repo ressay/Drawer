@@ -49,20 +49,20 @@ opencv2/highgui.hpp
 -
 opencv2/imgproc.hpp
 -
-testqt.h
-../Useful/testqt.h
+mainUI.h
+../Useful/mainUI.h
 
-..//testqt.h
+..//mainUI.h
 QtWidgets/QMainWindow
 -
-ui_testqt.h
-../ui_testqt.h
+ui_main.h
+../ui_main.h
 
 ../Drawing/Drawer.h
 Useful/Displayer.h
 -
 
-../ui_testqt.h
+../ui_main.h
 QtCore/QVariant
 -
 QtWidgets/QAction
@@ -175,8 +175,8 @@ opencv2/highgui.hpp
 -
 opencv2/imgproc.hpp
 -
-testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/Useful/testqt.h
+mainUI.h
+/home/ressay/StudiesTPM2/Vision/Project/Useful/mainUI.h
 
 /home/ressay/StudiesTPM2/Vision/Project/Useful/KeyHandler.cpp
 KeyHandler.h
@@ -190,17 +190,17 @@ vector
 opencv2/highgui.hpp
 -
 
-/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_testqt.cpp
-../../../testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_mainUI.cpp
+../../../mainUI.h
+/home/ressay/StudiesTPM2/Vision/Project/mainUI.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
 /home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/moc_compilation.cpp
-EWIEGA46WW/moc_testqt.cpp
-/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_testqt.cpp
+EWIEGA46WW/moc_mainUI.cpp
+/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/Project_autogen/EWIEGA46WW/moc_mainUI.cpp
 
 /home/ressay/StudiesTPM2/Vision/Project/main.cpp
 iostream
@@ -217,14 +217,12 @@ DetectingMethods/DetectionPolicy.h
 /home/ressay/StudiesTPM2/Vision/Project/DetectingMethods/DetectionPolicy.h
 Useful/BasicMethods.h
 /home/ressay/StudiesTPM2/Vision/Project/Useful/BasicMethods.h
-testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+mainUI.h
+/home/ressay/StudiesTPM2/Vision/Project/mainUI.h
 
-/home/ressay/StudiesTPM2/Vision/Project/qrc_testqt.cpp
-
-/home/ressay/StudiesTPM2/Vision/Project/testqt.cpp
-testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+/home/ressay/StudiesTPM2/Vision/Project/mainUI.cpp
+mainUI.h
+/home/ressay/StudiesTPM2/Vision/Project/mainUI.h
 QtCore
 -
 QtGui
@@ -246,13 +244,15 @@ Drawing/DrawManager.h
 Useful/BasicMethods.h
 -
 
-/home/ressay/StudiesTPM2/Vision/Project/testqt.h
+/home/ressay/StudiesTPM2/Vision/Project/mainUI.h
 QtWidgets/QMainWindow
 -
-ui_testqt.h
-/home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h
+ui_main.h
+/home/ressay/StudiesTPM2/Vision/Project/ui_main.h
 
-/home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h
+/home/ressay/StudiesTPM2/Vision/Project/qrc_testqt.cpp
+
+/home/ressay/StudiesTPM2/Vision/Project/ui_main.h
 QtCore/QVariant
 -
 QtWidgets/QAction

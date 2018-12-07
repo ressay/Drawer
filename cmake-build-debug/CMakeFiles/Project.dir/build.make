@@ -157,28 +157,28 @@ CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o.provides: CMakeFil
 CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o.provides.build: CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o
 
 
-CMakeFiles/Project.dir/testqt.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/testqt.cpp.o: ../testqt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/testqt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/testqt.cpp.o -c /home/ressay/StudiesTPM2/Vision/Project/testqt.cpp
+CMakeFiles/Project.dir/mainUI.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/mainUI.cpp.o: ../mainUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ressay/StudiesTPM2/Vision/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/mainUI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/mainUI.cpp.o -c /home/ressay/StudiesTPM2/Vision/Project/mainUI.cpp
 
-CMakeFiles/Project.dir/testqt.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/testqt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ressay/StudiesTPM2/Vision/Project/testqt.cpp > CMakeFiles/Project.dir/testqt.cpp.i
+CMakeFiles/Project.dir/mainUI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/mainUI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ressay/StudiesTPM2/Vision/Project/mainUI.cpp > CMakeFiles/Project.dir/mainUI.cpp.i
 
-CMakeFiles/Project.dir/testqt.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/testqt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ressay/StudiesTPM2/Vision/Project/testqt.cpp -o CMakeFiles/Project.dir/testqt.cpp.s
+CMakeFiles/Project.dir/mainUI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/mainUI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ressay/StudiesTPM2/Vision/Project/mainUI.cpp -o CMakeFiles/Project.dir/mainUI.cpp.s
 
-CMakeFiles/Project.dir/testqt.cpp.o.requires:
+CMakeFiles/Project.dir/mainUI.cpp.o.requires:
 
-.PHONY : CMakeFiles/Project.dir/testqt.cpp.o.requires
+.PHONY : CMakeFiles/Project.dir/mainUI.cpp.o.requires
 
-CMakeFiles/Project.dir/testqt.cpp.o.provides: CMakeFiles/Project.dir/testqt.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/testqt.cpp.o.provides.build
-.PHONY : CMakeFiles/Project.dir/testqt.cpp.o.provides
+CMakeFiles/Project.dir/mainUI.cpp.o.provides: CMakeFiles/Project.dir/mainUI.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/mainUI.cpp.o.provides.build
+.PHONY : CMakeFiles/Project.dir/mainUI.cpp.o.provides
 
-CMakeFiles/Project.dir/testqt.cpp.o.provides.build: CMakeFiles/Project.dir/testqt.cpp.o
+CMakeFiles/Project.dir/mainUI.cpp.o.provides.build: CMakeFiles/Project.dir/mainUI.cpp.o
 
 
 CMakeFiles/Project.dir/qrc_testqt.cpp.o: CMakeFiles/Project.dir/flags.make
@@ -331,7 +331,7 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/Useful/BasicMethods.cpp.o" \
 "CMakeFiles/Project.dir/Useful/Displayer.cpp.o" \
 "CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o" \
-"CMakeFiles/Project.dir/testqt.cpp.o" \
+"CMakeFiles/Project.dir/mainUI.cpp.o" \
 "CMakeFiles/Project.dir/qrc_testqt.cpp.o" \
 "CMakeFiles/Project.dir/Useful/KeyHandler.cpp.o" \
 "CMakeFiles/Project.dir/Drawing/Drawer.cpp.o" \
@@ -346,7 +346,7 @@ Project: CMakeFiles/Project.dir/main.cpp.o
 Project: CMakeFiles/Project.dir/Useful/BasicMethods.cpp.o
 Project: CMakeFiles/Project.dir/Useful/Displayer.cpp.o
 Project: CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o
-Project: CMakeFiles/Project.dir/testqt.cpp.o
+Project: CMakeFiles/Project.dir/mainUI.cpp.o
 Project: CMakeFiles/Project.dir/qrc_testqt.cpp.o
 Project: CMakeFiles/Project.dir/Useful/KeyHandler.cpp.o
 Project: CMakeFiles/Project.dir/Drawing/Drawer.cpp.o
@@ -417,7 +417,7 @@ CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/main.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/Useful/BasicMethods.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/Useful/Displayer.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/DetectingMethods/DetectionPolicy.cpp.o.requires
-CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/testqt.cpp.o.requires
+CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/mainUI.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/qrc_testqt.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/Useful/KeyHandler.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/Drawing/Drawer.cpp.o.requires

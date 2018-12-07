@@ -1,4 +1,4 @@
-#include "testqt.h"
+#include "mainUI.h"
 #include <QtCore>
 #include <QtGui>
 

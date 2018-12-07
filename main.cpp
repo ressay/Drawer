@@ -6,7 +6,7 @@
 #include "DetectingMethods/DetectionPolicy.h"
 
 #include "Useful/BasicMethods.h"
-#include "testqt.h"
+#include "mainUI.h"
 
 using namespace cv;
 using namespace std;

@@ -176,16 +176,16 @@
 		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/main.cpp">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/mainUI.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/mainUI.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/qrc_testqt.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/testqt.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/testqt.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/ui_testqt.h">
+		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/ui_main.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/home/ressay/StudiesTPM2/Vision/Project/CMakeLists.txt">
